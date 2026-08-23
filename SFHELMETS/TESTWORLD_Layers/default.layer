@@ -1,0 +1,39 @@
+GameEntity {
+ coords 125.443 1 131.856
+}
+GameEntity : "{0EFA61D445A76173}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SFHELMETMULTICAM.et" {
+ coords 131.506 1 136.016
+}
+GameEntity : "{369046752B1D3674}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SFHELMETRG.et" {
+ coords 131.81 1 135.994
+}
+GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+ coords 129.303 1 134.896
+}
+GenericEntity : "{5D58593E2170CD23}Prefabs/Attachments/Core/RGComtacs.et" {
+ coords 135.428 1 134.33
+}
+GenericEntity : "{6959F08AB1F13C13}Prefabs/Attachments/Core/RGBRAINPOUCH.et" {
+ coords 135.903 1 134.223
+}
+GameEntity : "{6B48CC8B6CB07712}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SFHELMETTAN.et" {
+ coords 132.484 1 135.993
+}
+GenericEntity : "{9F867E4D80315781}Prefabs/Attachments/Core/MCBatteryPack.et" {
+ coords 136.574 1 134.398
+}
+GenericEntity : "{A22AEDE84C6F1630}Prefabs/Attachments/Core/MCCOMTACS.et" {
+ coords 136.373 1 133.997
+}
+GenericEntity : "{B116CCA3642E7552}Prefabs/Attachments/Core/ShawBrainPouch.et" {
+ coords 134.805 1 134.029
+}
+GameEntity : "{E1F107716548EAF1}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SFHELMETGRN.et" {
+ coords 130.735 1 135.993
+}
+GameEntity : "{E43924D345A0A0BD}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SFHELMETAOR1.et" {
+ coords 132.167 1 136.002
+}
+GameEntity : "{F054E1A17D68D6F3}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SFHELMETMCB.et" {
+ coords 131.091 1.029 136.018
+}

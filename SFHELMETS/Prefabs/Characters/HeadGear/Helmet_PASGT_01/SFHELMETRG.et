@@ -1,0 +1,58 @@
+GameEntity : "{8A2B2A544F3ED831}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_base.et" {
+ ID "50D485E1435D6C72"
+ components {
+  MeshObject "{5112706CD4157AE0}" {
+   Object "{C17B46BC384CC32E}ASSETS/HELMET RG/SF V2 Bump (Rigged).xob"
+  }
+  SCR_HeadgearInventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{5244E4431DA56D64}" {
+    ItemDisplayName UIInfo "{5244E443130B31B9}" {
+     Name "GRS SFV2 (RG)"
+     Description ""
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    LoadoutSlotInfo Battery {
+     Prefab "{9F867E4D80315781}Prefabs/Attachments/Core/MCBatteryPack.et"
+     InheritParentSkeleton 1
+     AreaType GRS_Helmet_Battery "{6A2F5634B43983F8}" {
+     }
+    }
+    LoadoutSlotInfo Earpro {
+     Prefab "{A22AEDE84C6F1630}Prefabs/Attachments/Core/MCCOMTACS.et"
+     InheritParentSkeleton 1
+     AreaType GRS_Helmet_EarPro "{6A2F5634ABB7E5C0}" {
+     }
+    }
+    LoadoutSlotInfo HelStar {
+     PivotID "Head"
+     Offset -0.0011 0.1959 0.0568
+     Angles 22.9859 -3.1103 2.7283
+     Prefab "{5F5DB4A4B4AB4209}Prefabs/Characters/HeadGear/Accessories/HelStroke.et"
+     AreaType GRS_Helmet_Strobe "{6A2F5634AF97D575}" {
+     }
+    }
+    LoadoutSlotInfo Light {
+     PivotID "Head"
+     Offset 0.094 0.1405 -0.0421
+     Angles 5.5281 -6.2267 -3.5003
+     Prefab "{6DAE9FEDFCDA4295}Prefabs/Characters/HeadGear/Accessories/HelmetLight.et"
+     AreaType GRS_Helmet_Light "{6A2F5634A3C8AACF}" {
+     }
+    }
+    LoadoutSlotInfo NVG {
+     PivotID "Head"
+     Offset 0.0015 0.0328 -0.1222
+     Angles 0 175.4911 0
+     Prefab "{9BB251657D49553C}Prefabs/Characters/Eyewear/GRS_FPANOSB_GRS_NVG.et"
+     AreaType GRS_Helmet_NVG "{6A2F5634A59F0B6C}" {
+     }
+    }
+   }
+   WornModel "{C17B46BC384CC32E}ASSETS/HELMET RG/SF V2 Bump (Rigged).xob"
+   ItemModel "{C17B46BC384CC32E}ASSETS/HELMET RG/SF V2 Bump (Rigged).xob"
+  }
+ }
+}

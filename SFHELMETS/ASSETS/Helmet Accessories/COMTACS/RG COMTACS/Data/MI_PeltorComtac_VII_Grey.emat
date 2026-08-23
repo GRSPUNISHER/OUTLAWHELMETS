@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{5A345339BDE8EA93}ASSETS/Helmet Accessories/COMTACS/RG COMTACS/Data/RGMI_PeltorComtac_VII_Grey_BCR.edds"
+ NMOMap "{62ECE8AB649FB80D}ASSETS/Helmet Accessories/COMTACS/RG COMTACS/Data/RGMI_PeltorComtac_VII_Grey_NMO.edds"
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2AF20FDC911F7C48}ASSETS/Helmet Accessories/BATTERYPACK/Data/MI_PVS31_BRS_MC.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

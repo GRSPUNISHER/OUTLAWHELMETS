@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D1FD7DF502C51536}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/Data/ShawBrain.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

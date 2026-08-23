@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E1DF18D70AABD4AF}ASSETS/Helmet Accessories/COMTACS/RG COMTACS/Data/MI_PeltorComtac_VII_Grey.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

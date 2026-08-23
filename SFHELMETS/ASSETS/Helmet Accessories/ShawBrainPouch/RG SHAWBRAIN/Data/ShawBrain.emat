@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{21E05E1D4E05CBFA}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/Data/RGShawBrain_BCR.edds"
+ NMOMap "{1938E58F97729964}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/Data/RGShawBrain_NMO.edds"
+}

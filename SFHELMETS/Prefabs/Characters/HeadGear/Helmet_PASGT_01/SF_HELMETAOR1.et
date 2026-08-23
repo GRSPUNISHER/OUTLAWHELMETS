@@ -1,0 +1,207 @@
+GameEntity {
+ ID "6A2F5CA9A0962B93"
+ components {
+  ParametricMaterialInstanceComponent "{6A2F5CA91792AE2B}" {
+   UserParamAlpha 0
+   ApplyPropertiesWhenMeshChanged 1
+  }
+  Persistence "{6A2F5CA91792AE2E}" {
+  }
+  ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
+    ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
+     Name "SFV2 AOR1"
+     Description "SFV2 AOR1"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA9C13735FD}" {
+     SizeSetupStrategy Manual
+     ItemDimensions 25 25 25
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F5CA9ECFAF4E1}" {
+      CameraOrbitAngles -25 30 0
+      FOV 65
+     }
+    }
+   }
+   StoragePurpose 0x40 0
+  }
+  ColliderHistoryComponent "{6A2F5CA91792AE13}" {
+  }
+  InventoryItemComponent "{6A2F5CA9179317BC}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA91793164B}" {
+    ItemDisplayName UIInfo "{6A2F5CA917931623}" {
+     Name "GRS SFV2 (AOR1)"
+     Description ""
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA917931612}" {
+     Weight 1.5
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 20
+     ItemVolume 2500
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F5CA91793166D}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 1.5
+      CameraOffset 0 -0.02 0
+      FOV 10
+      PreviewWornModel 0
+     }
+     SCR_HeadgearPhysicsObserverAttribute "{6A2F5CA917931654}" {
+     }
+    }
+   }
+  }
+  MeshObject "{6A2F5CA91793117D}" {
+   Object "{BCC24E7EE379A106}ASSETS/HELMET AOR1/SF V2 Bump (Rigged).xob"
+   LODFactors {
+    1 1 1 1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{6A2F5CA91793115B}" {
+   Mass 1.5
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_ArmorDamageManagerComponent "{6A2F5CA9179316DA}" {
+   "Additional hit zones" {
+    SCR_ArmorHitZone helmet {
+     ColliderNames {
+      "UTM_Helmet_PASGT_01"
+     }
+     HZDefault 1
+     MaxHealth 10000
+     m_eHitZoneGroup HEAD
+    }
+   }
+   m_fPassedDamageScale 4
+   m_bIsDetachable 1
+  }
+  SCR_ItemOutfitFactionComponent "{6A2F5CA91793179E}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{6A2F5CA91793179F}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{6A2F5CA917931798}" {
+      m_AffiliatedFactionKey "US"
+      m_iOutfitFactionValue 15
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{6A2F5CA9179317D2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6A2F5CA9179317F2}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6A2F5CA9179317F8}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6A2F5CA9179317ED}" {
+     m_sSoundProject "{0737072109E39224}Sounds/Items/_SharedData/Drop/Items_Drop_Helmet.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
+   AreaType LoadoutHeadCoverArea "{6A2F5CA9179317CF}" {
+   }
+   Slots {
+    LoadoutSlotInfo Goggles {
+     AreaType LoadoutGooglesArea "{6A2F5CA917931721}" {
+     }
+    }
+    LoadoutSlotInfo MeshCover {
+    }
+    LoadoutSlotInfo Battery {
+     AutoTransform 0
+     Prefab "{9F867E4D80315781}Prefabs/Attachments/Core/MCBatteryPack.et"
+     InheritParentSkeleton 1
+     AreaType GRS_Helmet_Battery "{6A2F5CA917931711}" {
+     }
+    }
+    LoadoutSlotInfo Earpro {
+     Prefab "{A22AEDE84C6F1630}Prefabs/Attachments/Core/MCCOMTACS.et"
+     InheritParentSkeleton 1
+     AreaType GRS_Helmet_EarPro "{6A2F5CA91793171C}" {
+     }
+    }
+    LoadoutSlotInfo HelStroke {
+     PivotID "Head"
+     Offset 0.0003 0.1973 0.0552
+     Angles 23.0768 -0.5668 1.9476
+     Prefab "{5F5DB4A4B4AB4209}Prefabs/Characters/HeadGear/Accessories/HelStroke.et"
+     AreaType GRS_Helmet_Strobe "{6A2F5CA917931770}" {
+     }
+    }
+    LoadoutSlotInfo Light {
+     PivotID "Head"
+     Offset 0.0962 0.1411 -0.0392
+     Angles 6.0624 -5.2432 2.4633
+     Prefab "{6DAE9FEDFCDA4295}Prefabs/Characters/HeadGear/Accessories/HelmetLight.et"
+     AreaType GRS_Helmet_Light "{6A2F5CA917931778}" {
+     }
+    }
+    LoadoutSlotInfo NVG {
+     PivotID "Head"
+     Offset 0.0016 0.0337 -0.1209
+     Angles 0 -179.996 0
+     Prefab "{9BB251657D49553C}Prefabs/Characters/Eyewear/GRS_FPANOSB_GRS_NVG.et"
+     AreaType GRS_Helmet_NVG "{6A2F5CA917931769}" {
+     }
+    }
+   }
+   WornModel "{BCC24E7EE379A106}ASSETS/HELMET AOR1/SF V2 Bump (Rigged).xob"
+   ItemModel "{BCC24E7EE379A106}ASSETS/HELMET AOR1/SF V2 Bump (Rigged).xob"
+   PhysicsOnWearEnabled 1
+   AnimateCollidersOnWear 1
+   SoundInt 110
+  }
+  ActionsManagerComponent "{6A2F5CA91793143C}" {
+   ActionContexts {
+    UserActionContext "{6A2F5CA917931482}" {
+     ContextName "default"
+     Position PointInfo "{6A2F5CA917931492}" {
+      Offset 0 0.1 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_EquipClothAction "{6A2F5CA9179314DF}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F5CA9179314F8}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+     "Sort Priority" -10
+    }
+    SCR_PickUpItemAction "{6A2F5CA917931438}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F5CA9179314CF}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{6A2F5CA917931427}" {
+  }
+  RplComponent "{6A2F5CA917931429}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6A2F5CA91793142D}" {
+  }
+ }
+ coords 0 0 0
+}

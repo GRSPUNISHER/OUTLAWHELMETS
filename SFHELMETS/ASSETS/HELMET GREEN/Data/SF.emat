@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{64E5DFE1A444C4CC}ASSETS/HELMET GREEN/Data/grSF_BCR.edds"
+ NMOMap "{5C3D64737D339652}ASSETS/HELMET GREEN/Data/grSF_NMO.edds"
+}
