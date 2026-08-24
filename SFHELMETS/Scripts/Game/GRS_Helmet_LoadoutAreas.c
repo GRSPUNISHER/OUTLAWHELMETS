@@ -12,3 +12,6 @@ class GRS_Helmet_Light: LoadoutAreaType{};
 
 // Night vision device mount point
 class GRS_Helmet_NVG: LoadoutAreaType{};
+
+// Scrims
+class GRS_Helmet_Scrim: LoadoutAreaType{};

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{196FD2400B7A8FE8}ASSETS/Helmet Accessories/Scrims/Data/High_Cut_Helmet_Scrim_Oak.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

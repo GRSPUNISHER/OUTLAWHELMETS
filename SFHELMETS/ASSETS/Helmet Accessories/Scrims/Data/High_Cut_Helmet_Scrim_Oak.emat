@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{74CE288FC28DEBCE}ASSETS/Helmet Accessories/Scrims/Data/High_Cut_Helmet_Scrim_Oak_BCR.edds"
+ OpacityMap "{3288D98A79C589AB}ASSETS/Helmet Accessories/Scrims/Data/High_Cut_Helmet_Scrim_Oak_Opacity.edds"
+ NMOMap "{4C16931D1BFAB950}ASSETS/Helmet Accessories/Scrims/Data/High_Cut_Helmet_Scrim_Oak_NMO.edds"
+}

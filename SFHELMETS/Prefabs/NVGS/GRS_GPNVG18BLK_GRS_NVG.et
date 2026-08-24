@@ -1,0 +1,153 @@
+GenericEntity {
+ ID "6A2F76A0732AFC26"
+ components {
+  ParametricMaterialInstanceComponent "{6A2F76A0732AFCDA}" {
+  }
+  Persistence "{6A2F76A0732AFCD2}" {
+  }
+  SignalsManagerComponent "{6A2F76A0732AFCCC}" {
+  }
+  BaseLightManagerComponent "{6A2F76A0732AFCCD}" {
+   LightSlots {
+    BaseLightSlot "{6A2F76A0732AFCCE}" {
+     LightType Head
+     LightState 1
+     LightPositionInfo EmissiveLightSurfaceSlot L_Eye {
+      Offset -0.0311 0.0329 0.0385
+      Angles 0 -180 0
+      Prefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+     }
+     LightPrefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+    }
+    BaseLightSlot "{6A2F76A0732AFCC9}" {
+     LightType Head
+     LightState 1
+     LightPositionInfo EmissiveLightSurfaceSlot R_Eye {
+      Offset 0.0429 0.0329 0.0385
+      Angles 0 -180 0
+      Prefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+     }
+     LightPrefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+    }
+   }
+  }
+  GRS_NVGEyeLightComponent "{6A2F76A0732AFCC5}" {
+  }
+  GRS_NVGModelComponent "{6A2F76A0732AFCC6}" {
+   m_eTubeType QUADS
+  }
+  GRS_PiPNVGModelComponent "{6A2F76A0732A4210}" {
+   m_fFeedWidth 0.995
+   m_fFeedHeight 0.654
+   m_fFeedOffsetY 0.01
+   m_sOverlayImage "{6D7F3447BAAB24C4}UI/OverlayImages/Untitled - July 26, 2026 at 03.04.26 (5).edds"
+   m_bParentUnderMainCamera 1
+  }
+  InventoryItemComponent "{6A2F76A0732A4216}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F76A0732A4217}" {
+    ItemDisplayName UIInfo "{6A2F76A0732A4214}" {
+     Name "GRS: GPNVG-18 Blk"
+     Description "Modern Panoramic Night Vision Device"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F76A0732A4215}" {
+     Weight 1
+     SizeSetupStrategy Manual
+     ItemDimensions 0.001 0.001 0.001
+     ItemVolume 0.001
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F76A0732A4220}" {
+      FOV 60
+     }
+    }
+   }
+  }
+  MeshObject "{6A2F76A0732A4224}" {
+   Object "{E57C88C4307D0C2D}Assets/NVG_Models/GPNVG18.xob"
+   LODFactors {
+    1 1 1 1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{6A2F76A0732A423A}" {
+   ModelGeometry 1
+   Static 1
+  }
+  ProcAnimComponent "{6A2F76A0732A4238}" {
+   Parameters {
+    ProcAnimParams "{6A2F76A0732A423E}" {
+     ResourceName "{F098D5911136E4A8}Assets/ProcAnims/NVGUp.pap"
+     BoneNames {
+      "w_Pivot"
+     }
+     AlwaysSimulateOwner 1
+    }
+   }
+  }
+  SCR_SoundDataComponent "{6A2F76A0732A423C}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6A2F76A0732A4230}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A0732BDC12}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A0732BDC14}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{6A2F76A0732BDC15}" {
+   AreaType GRS_Helmet_NVG "{6A2F76A0732BDC16}" {
+   }
+   WornModel "{E57C88C4307D0C2D}Assets/NVG_Models/GPNVG18.xob"
+   WornMaterialsOverride {
+    "{C2D2D9FF5A88308E}Assets/NVG_Models/Data/PGNVGBlk.emat"
+   }
+   ItemModel "{E57C88C4307D0C2D}Assets/NVG_Models/GPNVG18.xob"
+   ItemMaterialsOverride {
+    "{C2D2D9FF5A88308E}Assets/NVG_Models/Data/PGNVGBlk.emat"
+   }
+  }
+  ActionsManagerComponent "{6A2F76A0732BDC62}" {
+   ActionContexts {
+    UserActionContext "{6A2F76A0732BDC63}" {
+     ContextName "default"
+     Position PointInfo "{6A2F76A0732BDC64}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6A2F76A0732BDC66}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A0732BDC67}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+    SCR_EquipClothAction "{6A2F76A0732B8581}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A0732B859E}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  RplComponent "{6A2F76A0732B859C}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6A2F76A0732B859A}" {
+  }
+ }
+ coords 100.862 1.906 159.546
+}

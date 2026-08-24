@@ -1,0 +1,20 @@
+GameEntity : "{0DAB3BF7F61BB80E}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 .et" {
+ ID "6A2F5CA9A0962B93"
+ components {
+  ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
+    ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
+     Name "SF V2 (MC)"
+     Description "SFV2 MC"
+    }
+   }
+  }
+  MeshObject "{6A2F5CA91793117D}" {
+   Object "{ADCE64C0112D71D7}ASSETS/HELMET MC/SF V2 Bump (Rigged).xob"
+  }
+  BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
+   WornModel "{ADCE64C0112D71D7}ASSETS/HELMET MC/SF V2 Bump (Rigged).xob"
+   ItemModel "{ADCE64C0112D71D7}ASSETS/HELMET MC/SF V2 Bump (Rigged).xob"
+  }
+ }
+}

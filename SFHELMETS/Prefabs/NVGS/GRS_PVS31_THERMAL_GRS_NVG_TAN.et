@@ -1,0 +1,126 @@
+GenericEntity {
+ ID "6A2F76A004398256"
+ components {
+  ParametricMaterialInstanceComponent "{6A2F76A00439825E}" {
+  }
+  Persistence "{6A2F76A0043982A4}" {
+  }
+  SignalsManagerComponent "{6A2F76A0043982A8}" {
+  }
+  GRS_NVGModelComponent "{6A2F76A0043982A9}" {
+  }
+  GRS_PiPNVGModelComponent "{6A2F76A0043982AE}" {
+   m_fFeedWidth 0.58
+   m_fFeedHeight 0.5
+   m_sOverlayImage "{104C380B329458FE}UI/OverlayImages/Untitled - July 26, 2026 at 03.04.26 (12).edds"
+   m_sFeedMeshLayout ""
+   m_bParentUnderMainCamera 1
+  }
+  InventoryItemComponent "{6A2F76A0043982AD}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F76A0043982B2}" {
+    ItemDisplayName UIInfo "{6A2F76A0043982B3}" {
+     Name "GRS: Thermal Observation NVGs Tan"
+     Description "Modern Dual Tube Nightvision System"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F76A0043982B0}" {
+     Weight 1
+     SizeSetupStrategy Manual
+     ItemDimensions 0.001 0.001 0.001
+     ItemVolume 0.001
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F76A0043982B6}" {
+      FOV 60
+     }
+    }
+   }
+  }
+  MeshObject "{6A2F76A0043982B4}" {
+   Object "{F74E1507D320319A}Assets/NVG_Models/PVS31s.xob"
+   LODFactors {
+    1 1 1 1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{6A2F76A0043982B5}" {
+   ModelGeometry 1
+   Static 1
+  }
+  ProcAnimComponent "{6A2F76A00439A31A}" {
+   Parameters {
+    ProcAnimParams "{6A2F76A00439A312}" {
+     ResourceName "{F098D5911136E4A8}Assets/ProcAnims/NVGUp.pap"
+     BoneNames {
+      "w_Pivot"
+     }
+     AlwaysSimulateOwner 1
+    }
+   }
+  }
+  SCR_SoundDataComponent "{6A2F76A00439A32D}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6A2F76A00439A32E}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A00439A329}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A00439A328}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{6A2F76A00439A32B}" {
+   AreaType GRS_Helmet_NVG "{6A2F76A00439A32A}" {
+   }
+   WornModel "{F74E1507D320319A}Assets/NVG_Models/PVS31s.xob"
+   WornMaterialsOverride {
+    "{2B6D4B4951BF7DF1}Assets/NVG_Models/Data/PVS31Tan.emat"
+   }
+   ItemModel "{F74E1507D320319A}Assets/NVG_Models/PVS31s.xob"
+   ItemMaterialsOverride {
+    "{2B6D4B4951BF7DF1}Assets/NVG_Models/Data/PVS31Tan.emat"
+   }
+  }
+  ActionsManagerComponent "{6A2F76A00439A327}" {
+   ActionContexts {
+    UserActionContext "{6A2F76A00439A320}" {
+     ContextName "default"
+     Position PointInfo "{6A2F76A00439A33D}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6A2F76A00439A339}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A00439A330}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+    SCR_EquipClothAction "{6A2F76A00439A333}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A00439A332}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  RplComponent "{6A2F76A00439A34C}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6A2F76A00439A349}" {
+  }
+ }
+ coords 0.129 0.013 0.332
+}

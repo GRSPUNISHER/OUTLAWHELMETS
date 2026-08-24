@@ -1,0 +1,5 @@
+MatPBRBasic {
+ BCRMap "{E6C7F1DA8C0DFFF5}ASSETS/Helmet Accessories/Scrims/HighCut Semi RG/Data/High_Cut_Helmet_Scrim_SemiCircle_BCR.edds"
+ OpacityMap "{D355A97DD6E23BFB}ASSETS/Helmet Accessories/Scrims/HighCut Semi RG/Data/High_Cut_Helmet_Scrim_SemiCircle_Opacity.edds"
+ NMOMap "{F220963F370736D0}ASSETS/Helmet Accessories/Scrims/HighCut Semi RG/Data/High_Cut_Helmet_Scrim_SemiCircle_NMO.edds"
+}

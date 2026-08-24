@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{E9AFE142744A8B7E}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/Data/High_Cut_Helmet_Scrim_Oak_BCR.edds"
+ OpacityMap "{5123C0D634843E80}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/Data/High_Cut_Helmet_Scrim_Oak_Opacity.edds"
+ NMOMap "{D1775AD0AD3DD9E0}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/Data/High_Cut_Helmet_Scrim_Oak_NMO.edds"
+}

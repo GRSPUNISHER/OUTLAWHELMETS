@@ -1,0 +1,161 @@
+GenericEntity {
+ ID "6A2F76A07D9F97B9"
+ components {
+  ParametricMaterialInstanceComponent "{6A2F76A07D9F97B1}" {
+  }
+  Persistence "{6A2F76A07D9F97A6}" {
+  }
+  SignalsManagerComponent "{6A2F76A07D9F97A4}" {
+  }
+  BaseLightManagerComponent "{6A2F76A07D9F97A5}" {
+   LightSlots {
+    BaseLightSlot "{6A2F76A07D9F97A2}" {
+     LightType Head
+     LightState 1
+     LightPositionInfo EmissiveLightSurfaceSlot L_Eye {
+      Offset -0.0219 0.0329 0.0385
+      Angles 0 -180 0
+      Prefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+     }
+     LightPrefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+    }
+    BaseLightSlot "{6A2F76A07D9F979E}" {
+     LightType Head
+     LightState 1
+     LightPositionInfo EmissiveLightSurfaceSlot R_Eye {
+      Offset 0.0244 0.0329 0.0385
+      Angles 0 -180 0
+      Prefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+     }
+     LightPrefab "{7915441258645EB6}Prefabs/Items/LightEntity/NVGeyelight.et"
+    }
+   }
+  }
+  GRS_NVGEyeLightComponent "{6A2F76A07D9F979F}" {
+  }
+  GRS_NVGModelComponent "{6A2F76A07D9F979C}" {
+   m_eTubeType BINOS_FUSED
+  }
+  GRS_PiPNVGModelComponent "{6A2F76A07D9F979D}" {
+   m_bDualRTBackground 1
+   m_sThermalFusionWhite "{2EBFD8E3DC0C9243}Assets/ThermalEffects/PipThermalWhitePhos.emat"
+   m_sThermalFusionGreen "{E68FDB450EFB9DA8}Assets/ThermalEffects/PipThermalGreenPhos.emat"
+   m_sThermalFusionAmber "{BB0217D46C28722C}Assets/ThermalEffects/PipThermalAmberPhos.emat"
+   m_sThermalFusionRed "{8C44FC14AD1B0081}Assets/ThermalEffects/PipThermalRedPhos.emat"
+   m_fThermalFusionFarPlane 200
+   m_iThermalFusionRefreshPeriod 3
+   m_fThermalFusionWidth 0.2
+   m_fThermalFusionOffsetY -0.01
+   m_sThermalFusionLayout "{14390DFA14264B38}UI/layouts/NVGOverlays/GRS_PiPThermalLayout.layout"
+   m_fFeedWidth 0.58
+   m_fFeedHeight 0.5
+   m_sOverlayImage "{104C380B329458FE}UI/OverlayImages/Untitled - July 26, 2026 at 03.04.26 (12).edds"
+   m_sFeedMeshLayout ""
+   m_bParentUnderMainCamera 1
+   m_fPredictionStrength 2
+   m_fPredictionSmoothing 0.95
+   m_fPredictionPosStrength 2
+  }
+  InventoryItemComponent "{6A2F76A07D9F979A}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F76A07D9F979B}" {
+    ItemDisplayName UIInfo "{6A2F76A07D9F9798}" {
+     Name "GRS: PSQ-36 Fused Binos"
+     Description "Advanced Fused Thermal/NVG Binos, for distinguished gentlemen."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F76A07D9F9799}" {
+     Weight 1
+     SizeSetupStrategy Manual
+     ItemDimensions 0.001 0.001 0.001
+     ItemVolume 0.001
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F76A07D9F9793}" {
+      FOV 60
+     }
+    }
+   }
+  }
+  MeshObject "{6A2F76A07D9F9791}" {
+   Object "{981B83ADEC33C94D}Assets/NVG_Models/Fbinos.xob"
+   LODFactors {
+    1 1 1 1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{6A2F76A07D9F978F}" {
+   Active AlwaysActive
+   ModelGeometry 1
+   Static 1
+  }
+  ProcAnimComponent "{6A2F76A07D9F978C}" {
+   Parameters {
+    ProcAnimParams "{6A2F76A07D9F978A}" {
+     ResourceName "{81B80B07174CF5FC}Assets/ProcAnims/NVGUpPSQ36.pap"
+     BoneNames {
+      "w_Pivot" "w_Root"
+     }
+     AlwaysSimulateOwner 1
+    }
+   }
+  }
+  SCR_SoundDataComponent "{6A2F76A07D9F978B}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6A2F76A07D9F9786}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A07D9F9787}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A07D9F9784}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{6A2F76A07D9F9785}" {
+   AreaType GRS_Helmet_NVG "{6A2F76A07D9F9782}" {
+   }
+   WornModel "{981B83ADEC33C94D}Assets/NVG_Models/Fbinos.xob"
+   ItemModel "{981B83ADEC33C94D}Assets/NVG_Models/Fbinos.xob"
+  }
+  ActionsManagerComponent "{6A2F76A07D9F97F8}" {
+   ActionContexts {
+    UserActionContext "{6A2F76A07D9F97F6}" {
+     ContextName "default"
+     Position PointInfo "{6A2F76A07D9F97F7}" {
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{6A2F76A07D9F97F5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A07D9F32F4}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+    SCR_EquipClothAction "{6A2F76A07D9F32F2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A07D9F32F1}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  RplComponent "{6A2F76A07D9F32F0}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6A2F76A07D9F32EF}" {
+  }
+ }
+ coords 99.482 1.906 160.547
+}

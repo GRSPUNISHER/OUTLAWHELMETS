@@ -1,0 +1,20 @@
+GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et" {
+ ID "6A2F5CA9A0962B93"
+ components {
+  ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
+    ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
+     Name "SF V2 (OD Green)"
+     Description "SFV2 OD Green"
+    }
+   }
+  }
+  MeshObject "{6A2F5CA91793117D}" {
+   Object "{C78D73FB5623712C}ASSETS/HELMET GREEN/SF V2 Bump (Rigged).xob"
+  }
+  BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
+   WornModel "{C78D73FB5623712C}ASSETS/HELMET GREEN/SF V2 Bump (Rigged).xob"
+   ItemModel "{C78D73FB5623712C}ASSETS/HELMET GREEN/SF V2 Bump (Rigged).xob"
+  }
+ }
+}

@@ -1,0 +1,20 @@
+GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et" {
+ ID "6A2F5CA9A0962B93"
+ components {
+  ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
+    ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
+     Name "SF V2 (Tan)"
+     Description "SFV2 Tan"
+    }
+   }
+  }
+  MeshObject "{6A2F5CA91793117D}" {
+   Object "{D1394CABC2676C45}ASSETS/HELMET TAN/SF V2 Bump (Rigged).xob"
+  }
+  BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
+   WornModel "{D1394CABC2676C45}ASSETS/HELMET TAN/SF V2 Bump (Rigged).xob"
+   ItemModel "{D1394CABC2676C45}ASSETS/HELMET TAN/SF V2 Bump (Rigged).xob"
+  }
+ }
+}

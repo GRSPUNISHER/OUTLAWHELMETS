@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{29E039CB2FBAF2A7}Prefabs/Characters/HeadGear/Helmet_PASGT_01/SF_Helmet_ODGreen.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

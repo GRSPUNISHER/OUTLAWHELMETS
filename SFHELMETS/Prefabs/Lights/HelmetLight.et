@@ -1,0 +1,70 @@
+GenericEntity {
+ ID "6A2E8C6350DF2E1F"
+ components {
+  ParametricMaterialInstanceComponent "{6A2E8C6350DF2E04}" {
+   AcceptHierarchyProperties 0xffffffffffffffff 0xfffffffffffffff9
+  }
+  SignalsManagerComponent "{6A2E8C6350DF2E0D}" {
+  }
+  SoundComponent "{6A2E8C6350DF2E0C}" {
+   Filenames {
+    "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp" "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+   }
+  }
+  BaseLightManagerComponent "{6A2E8C6350DF2E72}" {
+   LightSlots {
+    BaseLightSlot "{6A2E8C6350DF2E71}" {
+     LightPositionInfo EmissiveLightSurfaceSlot IRStrobe {
+      Offset -0.0857 1.7494 0.0684
+      Angles -15 0 0
+      Prefab "{AF9C23DFF4771179}Prefabs/Items/LightEntity/WhiteLightLoPower.et"
+     }
+    }
+    BaseLightSlot "{6A2E8C6350DF2E76}" {
+     LightPositionInfo EmissiveLightSurfaceSlot IRStrobe {
+      Offset -0.0857 1.7494 0.0684
+      Angles -15 0 0
+      Prefab "{1C276C043849B104}Prefabs/Items/LightEntity/IllumLoPower.et"
+     }
+    }
+   }
+  }
+  GRS_FirstPersonHideComponent "{6A2E8C6350DF2E7B}" {
+  }
+  GRS_HelmetLightComponent "{6A2E8C6350DF2E7A}" {
+  }
+  InventoryItemComponent "{6A2E8C6350DF2E79}" {
+   Attributes SCR_ItemAttributeCollection "{6A2E8C6350DF2E78}" {
+    ItemDisplayName UIInfo "{6A2E8C6350DF2E7F}" {
+     Name "HelStar Strobe"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2E8C6350DF2E7D}" {
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2E8C6350DF2E63}" {
+      CameraPreset Right
+     }
+     AttachmentAttributes "{6A2F563523EFD8BD}" {
+      AttachmentType GRS_Helmet_Light "{6A2F5635273DF992}" {
+      }
+     }
+    }
+    m_Size SLOT_1x1
+   }
+  }
+  MeshObject "{6A2E8C6350DF2E65}" {
+   Object "{E54228E760C066F6}Assets/Accessories/HelmetLight_Scaled.xob"
+  }
+  RigidBody "{6A2E8C6350DF2E6A}" {
+  }
+  BaseLoadoutClothComponent "{6A2E8C6350DF2E69}" {
+   AreaType GRS_Helmet_Light "{6A2F76A91EB9BDD4}" {
+   }
+  }
+  RplComponent "{6A2E8C6350DF2E6E}" {
+  }
+  Hierarchy "{6A2E8C6350DF2E6C}" {
+  }
+ }
+ coords 0.11 0.028 0.044
+}

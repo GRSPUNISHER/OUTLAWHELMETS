@@ -1,0 +1,100 @@
+GenericEntity {
+ ID "6A2F7249CF6975E7"
+ components {
+  ParametricMaterialInstanceComponent "{6A2F7249CF6975E9}" {
+  }
+  Persistence "{6A2F7249CF6975C9}" {
+  }
+  GRS_FirstPersonHideComponent "{6A2F7249CF6975D2}" {
+  }
+  InventoryItemComponent "{6A2F7249CF6975D3}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F7249CF6975DC}" {
+    ItemDisplayName UIInfo "{6A2F7249CF6975DD}" {
+     Name "MC SHAW BRAIN"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F7249CF6975DF}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F7249CF6975D8}" {
+      CameraDistanceToItem 1
+      ItemRenderRotation 0 0 0
+      FOV 10
+     }
+     AttachmentAttributes "{6A2F7249CF6975A4}" {
+      AttachmentType GRS_Helmet_Battery "{6A2F7249CF6975A5}" {
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{6A2F7249CF6975A7}" {
+   Object "{84C12F9BFAC72F5C}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/shawbrainpouch.xob"
+  }
+  RigidBody "{6A2F7249CF6975A0}" {
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6A2F7249CF6975A2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6A2F7249CF6975BA}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6A2F7249CF6975BB}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6A2F7249CF697584}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{6A2F7249CF697587}" {
+   AreaType GRS_Helmet_Battery "{6A2F7249CF697580}" {
+   }
+   WornModel "{84C12F9BFAC72F5C}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/shawbrainpouch.xob"
+   ItemModel "{84C12F9BFAC72F5C}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/shawbrainpouch.xob"
+  }
+  ActionsManagerComponent "{6A2F7249CF697583}" {
+   ActionContexts {
+    UserActionContext "{6A2F7249CF69758C}" {
+     UIInfo SCR_ActionContextUIInfo "{6A2F7249CF69758D}" {
+     }
+     ContextName "user"
+     Position PointInfo "{6A2F7249CF69758F}" {
+     }
+     Radius 0.1
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAttachment "{6A2F7249CF697588}" {
+     ParentContextList {
+      "user"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F7249CF697589}" {
+      Name "#AR-UserAction_AttachToWeapon"
+     }
+    }
+    SCR_PickUpItemAction "{6A2F7249CF69759C}" {
+     ParentContextList {
+      "user"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F7249CF69759D}" {
+      Name "#AR-Inventory_Pickup"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  RplComponent "{6A2F7249CF697598}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6A2F7249CF697599}" {
+  }
+ }
+}

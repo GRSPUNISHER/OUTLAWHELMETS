@@ -1,0 +1,100 @@
+GenericEntity {
+ ID "6A2F76A151D7AF3A"
+ components {
+  ParametricMaterialInstanceComponent "{6A2F76A151D7AF0C}" {
+  }
+  Persistence "{6A2F76A151D7AF15}" {
+  }
+  GRS_FirstPersonHideComponent "{6A2F76A151D7AF10}" {
+  }
+  InventoryItemComponent "{6A2F76A151D7AF13}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F76A151D7AF1C}" {
+    ItemDisplayName UIInfo "{6A2F76A151D7AF1D}" {
+     Name "HighCut Oak Scrim (RG)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A2F76A151D7AF1F}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A2F76A151D7AF18}" {
+      CameraDistanceToItem 1
+      ItemRenderRotation 0 0 0
+      FOV 10
+     }
+     AttachmentAttributes "{6A2F76A151D7AF19}" {
+      AttachmentType GRS_Helmet_Battery "{6A2F76A151D7AF1B}" {
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{6A2F76A151D7AFE4}" {
+   Object "{325F717AAD147052}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak.xob"
+  }
+  RigidBody "{6A2F76A151D7AFE5}" {
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6A2F76A151D7AFE6}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{6A2F76A151D7AFEF}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A151D7AFE8}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{6A2F76A151D7AFE9}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{6A2F76A151D7AFEB}" {
+   AreaType GRS_Helmet_Scrim "{6A2F76A11093235A}" {
+   }
+   WornModel "{325F717AAD147052}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak.xob"
+   ItemModel "{325F717AAD147052}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak.xob"
+  }
+  ActionsManagerComponent "{6A2F76A151D7AFF5}" {
+   ActionContexts {
+    UserActionContext "{6A2F76A151D7AFF6}" {
+     UIInfo SCR_ActionContextUIInfo "{6A2F76A151D7AFF7}" {
+     }
+     ContextName "user"
+     Position PointInfo "{6A2F76A151D7AFF0}" {
+     }
+     Radius 0.1
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAttachment "{6A2F76A151D7AFF2}" {
+     ParentContextList {
+      "user"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A151D7AFF3}" {
+      Name "#AR-UserAction_AttachToWeapon"
+     }
+    }
+    SCR_PickUpItemAction "{6A2F76A151D7AFC6}" {
+     ParentContextList {
+      "user"
+     }
+     UIInfo SCR_ActionUIInfo "{6A2F76A151D7AFC7}" {
+      Name "#AR-Inventory_Pickup"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  RplComponent "{6A2F76A151D7AFC0}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{6A2F76A151D7AFC1}" {
+  }
+ }
+}

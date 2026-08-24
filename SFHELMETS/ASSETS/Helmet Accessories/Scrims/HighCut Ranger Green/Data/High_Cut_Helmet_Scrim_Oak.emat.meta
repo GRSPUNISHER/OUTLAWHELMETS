@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5A57F0A8D6AB47D5}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/Data/High_Cut_Helmet_Scrim_Oak.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}
