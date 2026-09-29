@@ -1,0 +1,94 @@
+GenericEntity {
+ ID "3CA13FEB856BE4E9"
+ components {
+  ParametricMaterialInstanceComponent "{9C649FF6C995DCEC}" {
+  }
+  Persistence "{A7BC6F58547BA0A4}" {
+  }
+  GRS_FirstPersonHideComponent "{1B1C7D9B98D3AA67}" {
+  }
+  InventoryItemComponent "{D6657C8080B28516}" {
+   Attributes SCR_ItemAttributeCollection "{3F0CBCFACA26FB41}" {
+    ItemDisplayName UIInfo "{1085DB9FE599C833}" {
+     Name "SF V2 ARC Rails (OD Green)"
+     Description "Removable ARC rails for the SF V2 Bump / Ballistic helmets."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{59FA0C93A37FA4D3}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{9BC9EE910B578267}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{3BB4E532AFCADA9A}" {
+   Object "{8B8FBF6B7E46EB8F}ASSETS/HELMET GREEN/SF V2 Rails_Item.xob"
+  }
+  RigidBody "{0761DB9837A24F96}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{BDB1EC780C5AE88E}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5927A4F1B99D8B72}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{A111576C39E9FED1}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{62B52686AF20CBD2}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{09EA3AB4B861181D}" {
+   AreaType GRS_Helmet_Rails "{9F86B89B3BA7BFEA}" {
+   }
+   WornModel "{C8CBA542F83AA21F}ASSETS/HELMET GREEN/SF V2 Rails.xob"
+   ItemModel "{8B8FBF6B7E46EB8F}ASSETS/HELMET GREEN/SF V2 Rails_Item.xob"
+  }
+  ActionsManagerComponent "{78E7E891E00A1130}" {
+   ActionContexts {
+    UserActionContext "{5402CD2B0AF7A7F4}" {
+     UIInfo SCR_ActionContextUIInfo "{3B6A66D0A060CC72}" {
+     }
+     ContextName "default"
+     Position PointInfo "{4926C040DBB8FFF7}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{D5A6C16B296CA0EA}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{0FDCE7705077BF66}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{94088A1957362F3A}" {
+  }
+  RplComponent "{613B9F6EDE6FE40A}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{277D8EA48E6F23F0}" {
+  }
+ }
+}

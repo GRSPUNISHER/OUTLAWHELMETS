@@ -1,0 +1,94 @@
+GenericEntity {
+ ID "A6544B3AF44AF287"
+ components {
+  ParametricMaterialInstanceComponent "{4AFA24E4941945E0}" {
+  }
+  Persistence "{190AFE0184FABAD4}" {
+  }
+  GRS_FirstPersonHideComponent "{70174436867480A9}" {
+  }
+  InventoryItemComponent "{9ABB5A74F480242F}" {
+   Attributes SCR_ItemAttributeCollection "{7FD2D78B6E717B4F}" {
+    ItemDisplayName UIInfo "{7B607E4039019A89}" {
+     Name "BNVD Battery Pack"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{4515996AA972D07E}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{8140119FD1B6EAAB}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{BB216B819ABF97DD}" {
+   Object "{67F475C56B1A1565}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery_Item.xob"
+  }
+  RigidBody "{33CA5630C3D05F92}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{E053DD6617383FA9}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{29D2C0CE60563A9E}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{1AAE666CCBCDF206}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{9A4E7C55C4253976}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{535B23056593EA79}" {
+   AreaType GRS_Helmet_Battery "{D25432A074113D23}" {
+   }
+   WornModel "{A9601CD467097E4A}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery.xob"
+   ItemModel "{67F475C56B1A1565}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery_Item.xob"
+  }
+  ActionsManagerComponent "{676E856FFB0AA3EE}" {
+   ActionContexts {
+    UserActionContext "{29F4CDCB5174B1C9}" {
+     UIInfo SCR_ActionContextUIInfo "{D1D5B4E905518CDA}" {
+     }
+     ContextName "default"
+     Position PointInfo "{CEB47E14AA57B066}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{5A8E7D43BF912810}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{BD5098C9B7B7CC94}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{ADF1582075D4B149}" {
+  }
+  RplComponent "{7A8D2C76323CD225}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{9B73903C3E8D78DF}" {
+  }
+ }
+}

@@ -1,0 +1,94 @@
+GenericEntity {
+ ID "490091D1F1D1E7F2"
+ components {
+  ParametricMaterialInstanceComponent "{456B57628BBCC1DD}" {
+  }
+  Persistence "{746E446C457055CE}" {
+  }
+  GRS_FirstPersonHideComponent "{00F5A411E08A673D}" {
+  }
+  InventoryItemComponent "{850E2EEDA1F60E9C}" {
+   Attributes SCR_ItemAttributeCollection "{DFC7C1F4C821B0A7}" {
+    ItemDisplayName UIInfo "{ED3A9ACE5A19DD50}" {
+     Name "SF V2 ARC Rails (MCB)"
+     Description "Removable ARC rails for the SF V2 Bump / Ballistic helmets."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{635A61855BAFB5D1}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{623F2F45293AC42C}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{2ABECB3CAAF66CA9}" {
+   Object "{F244815E7F3C762A}ASSETS/HELMET BLACK/SF V2 Rails_Item.xob"
+  }
+  RigidBody "{75FFCC26E4227122}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{B22D1D82F1ED2693}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{8571D376344565DA}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6FCFD989E1F3054B}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{B88DD5B3DD0D2F41}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{805921365F16E9FD}" {
+   AreaType GRS_Helmet_Rails "{11DA95F1B4F406A1}" {
+   }
+   WornModel "{3B32EDC8DB188517}ASSETS/HELMET BLACK/SF V2 Rails.xob"
+   ItemModel "{F244815E7F3C762A}ASSETS/HELMET BLACK/SF V2 Rails_Item.xob"
+  }
+  ActionsManagerComponent "{19F68D6D68ED5862}" {
+   ActionContexts {
+    UserActionContext "{E5E5816977F268CF}" {
+     UIInfo SCR_ActionContextUIInfo "{CC2BD0A9BE957C32}" {
+     }
+     ContextName "default"
+     Position PointInfo "{A38126C9B2567F15}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{A831FE23C642310F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{237DBBC7784135A5}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{99167DC86F834FFE}" {
+  }
+  RplComponent "{201BBD6D4E7ED34E}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{5B3D8ADEA317C6EC}" {
+  }
+ }
+}

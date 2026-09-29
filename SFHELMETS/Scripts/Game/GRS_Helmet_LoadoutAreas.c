@@ -15,3 +15,6 @@ class GRS_Helmet_NVG: LoadoutAreaType{};
 
 // Scrims
 class GRS_Helmet_Scrim: LoadoutAreaType{};
+
+// Helmet rails (removable part of the modular SF V2 helmets)
+class GRS_Helmet_Rails: LoadoutAreaType{};

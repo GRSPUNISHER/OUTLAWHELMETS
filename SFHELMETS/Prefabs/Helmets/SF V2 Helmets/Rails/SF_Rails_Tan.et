@@ -1,0 +1,94 @@
+GenericEntity {
+ ID "FFF0F50EC12733BD"
+ components {
+  ParametricMaterialInstanceComponent "{2FEABBF023BBF05B}" {
+  }
+  Persistence "{3BE44D89BDF07CD9}" {
+  }
+  GRS_FirstPersonHideComponent "{2EB095331BB31AC4}" {
+  }
+  InventoryItemComponent "{0DE9B6CFC2AA9B8B}" {
+   Attributes SCR_ItemAttributeCollection "{53CBE6E6859B220F}" {
+    ItemDisplayName UIInfo "{E4E458B97CF7C817}" {
+     Name "SF V2 ARC Rails (Tan)"
+     Description "Removable ARC rails for the SF V2 Bump / Ballistic helmets."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{236CB6B11E64AEF4}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{C372411B0AA87E41}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{A481AB2C16D394B2}" {
+   Object "{8B4E8EF84042914F}ASSETS/HELMET TAN/SF V2 Rails_Item.xob"
+  }
+  RigidBody "{5A4DA7313DF82745}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{207C9A9C12D67851}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{BDDC17A7921526E6}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{4F368594652B5DAC}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{8D787FF7EF574B41}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{7F64099FCF232AFC}" {
+   AreaType GRS_Helmet_Rails "{8660B5D37852C781}" {
+   }
+   WornModel "{04D27596392B259A}ASSETS/HELMET TAN/SF V2 Rails.xob"
+   ItemModel "{8B4E8EF84042914F}ASSETS/HELMET TAN/SF V2 Rails_Item.xob"
+  }
+  ActionsManagerComponent "{3A729B4BE57F7792}" {
+   ActionContexts {
+    UserActionContext "{77B9058AC51E33A1}" {
+     UIInfo SCR_ActionContextUIInfo "{4EFF3D1116BEB860}" {
+     }
+     ContextName "default"
+     Position PointInfo "{6E7095F6276C7BEF}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{EF70B9F58AA6EC35}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{A5CC1C1F4F22CB3A}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{ED6B2CC6B987947A}" {
+  }
+  RplComponent "{934177DFE08E58A7}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{8BBEAF835452F6D2}" {
+  }
+ }
+}

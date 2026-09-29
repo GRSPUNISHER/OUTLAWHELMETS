@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{8228CD94BA885232}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/Data/Comtac6_BCR.edds"
+ NMOMap "{22A0DA0CA57E7298}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/Data/Comtac6_NMO.edds"
+}

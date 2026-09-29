@@ -1,0 +1,31 @@
+GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et" {
+ ID "6A2F5CA9A0962B93"
+ components {
+  ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
+    ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
+     Name "SF V2 Ballistic (RG)"
+    }
+   }
+  }
+  InventoryItemComponent "{6A2F5CA9179317BC}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA91793164B}" {
+    ItemDisplayName UIInfo "{6A2F5CA917931623}" {
+     Name "SF V2 Ballistic (RG)"
+    }
+   }
+  }
+  MeshObject "{6A2F5CA91793117D}" {
+   Object "{694481CF512DF612}ASSETS/HELMET RG/SF V2 Ballistic_Item.xob"
+  }
+  BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
+   Slots {
+    LoadoutSlotInfo Rails {
+     Prefab "{C322F29625872CC0}Prefabs/Helmets/SF V2 Helmets/Rails/SF_Rails_RG.et"
+    }
+   }
+   WornModel "{69CC49342E11295C}ASSETS/HELMET RG/SF V2 Ballistic.xob"
+   ItemModel "{694481CF512DF612}ASSETS/HELMET RG/SF V2 Ballistic_Item.xob"
+  }
+ }
+}

@@ -8,87 +8,81 @@ GenericEntity {
   GRS_FirstPersonHideComponent "{6A2F76A151D7AF10}" {
   }
   InventoryItemComponent "{6A2F76A151D7AF13}" {
-   Attributes SCR_ItemAttributeCollection "{6A2F76A151D7AF1C}" {
-    ItemDisplayName UIInfo "{6A2F76A151D7AF1D}" {
+   Attributes SCR_ItemAttributeCollection "{E1D407AB33BE2A82}" {
+    ItemDisplayName UIInfo "{7CDB79CF83B7D3DA}" {
      Name "HighCut Oak Scrim (RG)"
      Description "Helmet Attachment"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{6A2F76A151D7AF1F}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{7131DF5AB943F46A}" {
      SizeSetupStrategy Manual
      ItemVolume 10
     }
     CustomAttributes {
-     PreviewRenderAttributes "{6A2F76A151D7AF18}" {
+     PreviewRenderAttributes "{C57438D55958A3FA}" {
+      CameraOrbitAngles -25 30 0
       CameraDistanceToItem 1
-      ItemRenderRotation 0 0 0
       FOV 10
-     }
-     AttachmentAttributes "{6A2F76A151D7AF19}" {
-      AttachmentType GRS_Helmet_Battery "{6A2F76A151D7AF1B}" {
-      }
      }
     }
    }
   }
   MeshObject "{6A2F76A151D7AFE4}" {
-   Object "{325F717AAD147052}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak.xob"
+   Object "{C3C88813947BACBD}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak_Item.xob"
   }
   RigidBody "{6A2F76A151D7AFE5}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
    ModelGeometry 1
   }
   SCR_SoundDataComponent "{6A2F76A151D7AFE6}" {
    m_aAudioSourceConfiguration {
-    SCR_AudioSourceConfiguration "{6A2F76A151D7AFEF}" {
+    SCR_AudioSourceConfiguration "{A461D5D93F496112}" {
      m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_PICK_UP"
     }
-    SCR_AudioSourceConfiguration "{6A2F76A151D7AFE8}" {
+    SCR_AudioSourceConfiguration "{B7DDA281BCC0730A}" {
      m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_EQUIP"
      m_eFlags 0
     }
-    SCR_AudioSourceConfiguration "{6A2F76A151D7AFE9}" {
+    SCR_AudioSourceConfiguration "{F0783F6203E53C3F}" {
      m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_DROP"
     }
    }
   }
   BaseLoadoutClothComponent "{6A2F76A151D7AFEB}" {
-   AreaType GRS_Helmet_Scrim "{6A2F76A11093235A}" {
+   AreaType GRS_Helmet_Scrim "{45D37FF063019D6C}" {
    }
    WornModel "{325F717AAD147052}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak.xob"
-   ItemModel "{325F717AAD147052}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak.xob"
+   ItemModel "{C3C88813947BACBD}ASSETS/Helmet Accessories/Scrims/HighCut Ranger Green/HighCut Scrim Oak_Item.xob"
   }
   ActionsManagerComponent "{6A2F76A151D7AFF5}" {
    ActionContexts {
-    UserActionContext "{6A2F76A151D7AFF6}" {
-     UIInfo SCR_ActionContextUIInfo "{6A2F76A151D7AFF7}" {
+    UserActionContext "{F352818357365D13}" {
+     UIInfo SCR_ActionContextUIInfo "{B058ACC3CCD42AB4}" {
      }
-     ContextName "user"
-     Position PointInfo "{6A2F76A151D7AFF0}" {
+     ContextName "default"
+     Position PointInfo "{4E3CE42264D80572}" {
      }
-     Radius 0.1
+     Radius 0.3
     }
    }
    additionalActions {
-    SCR_EquipWeaponAttachment "{6A2F76A151D7AFF2}" {
+    SCR_PickUpItemAction "{FA75B299DB6D7FFE}" {
      ParentContextList {
-      "user"
+      "default"
      }
-     UIInfo SCR_ActionUIInfo "{6A2F76A151D7AFF3}" {
-      Name "#AR-UserAction_AttachToWeapon"
-     }
-    }
-    SCR_PickUpItemAction "{6A2F76A151D7AFC6}" {
-     ParentContextList {
-      "user"
-     }
-     UIInfo SCR_ActionUIInfo "{6A2F76A151D7AFC7}" {
-      Name "#AR-Inventory_Pickup"
+     UIInfo SCR_ActionUIInfo "{9D5724C2ACCE07A6}" {
+      Name "#AR-Inventory_PickUp"
       m_sIconName "pick-up"
      }
     }
    }
+  }
+  NwkPhysicsMovementComponent "{D67D135B61528963}" {
   }
   RplComponent "{6A2F76A151D7AFC0}" {
    "Rpl State Override" Runtime

@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{33ACEAB0C183E2B7}ASSETS/Helmet Accessories/BNVD BATTERY/Data/BNVDFBat_BCR.edds"
+ NMOMap "{2CC8364B6EDB144A}ASSETS/Helmet Accessories/BNVD BATTERY/Data/BNVDFBat_NMO.edds"
+}

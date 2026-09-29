@@ -10,8 +10,8 @@ GameEntity {
   ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
    Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
     ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
-     Name "SF V2 (AOR1)"
-     Description "SFV2 AOR1"
+     Name "SF V2 Bump (AOR1)"
+     Description "Modular SF V2 Bump helmet. Removable rails, ear pro, rear battery, scrim, NVG, light and strobe slots."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA9C13735FD}" {
      SizeSetupStrategy Manual
@@ -21,6 +21,7 @@ GameEntity {
      PreviewRenderAttributes "{6A2F5CA9ECFAF4E1}" {
       CameraOrbitAngles -25 30 0
       FOV 65
+      ShowAllChildrens 1
      }
     }
    }
@@ -32,7 +33,7 @@ GameEntity {
    Enabled 0
    Attributes SCR_ItemAttributeCollection "{6A2F5CA91793164B}" {
     ItemDisplayName UIInfo "{6A2F5CA917931623}" {
-     Name "GRS SFV2 (AOR1)"
+     Name "SF V2 Bump (AOR1)"
      Description ""
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA917931612}" {
@@ -55,7 +56,7 @@ GameEntity {
    }
   }
   MeshObject "{6A2F5CA91793117D}" {
-   Object "{BCC24E7EE379A106}ASSETS/HELMET AOR1/SF V2 Bump (Rigged).xob"
+   Object "{8B6B3B8A141AA4E9}ASSETS/HELMET AOR1/SF V2 Bump_Item.xob"
    LODFactors {
     1 1 1 1
    }
@@ -72,7 +73,7 @@ GameEntity {
    "Additional hit zones" {
     SCR_ArmorHitZone helmet {
      ColliderNames {
-      "UTM_Helmet_PASGT_01"
+      "UTM_Helmet"
      }
      HZDefault 1
      MaxHealth 10000
@@ -113,6 +114,12 @@ GameEntity {
    AreaType LoadoutHeadCoverArea "{6A2F5CA9179317CF}" {
    }
    Slots {
+    LoadoutSlotInfo Rails {
+     Prefab "{E676000201B24A76}Prefabs/Helmets/SF V2 Helmets/Rails/SF_Rails_AOR1.et"
+     InheritParentSkeleton 1
+     AreaType GRS_Helmet_Rails "{4D514F3A8DD68303}" {
+     }
+    }
     LoadoutSlotInfo Battery {
      InheritParentSkeleton 1
      AreaType GRS_Helmet_Battery "{6A2F5CA917931711}" {
@@ -149,8 +156,8 @@ GameEntity {
      }
     }
    }
-   WornModel "{BCC24E7EE379A106}ASSETS/HELMET AOR1/SF V2 Bump (Rigged).xob"
-   ItemModel "{BCC24E7EE379A106}ASSETS/HELMET AOR1/SF V2 Bump (Rigged).xob"
+   WornModel "{561D60AFD6B6D248}ASSETS/HELMET AOR1/SF V2 Bump.xob"
+   ItemModel "{8B6B3B8A141AA4E9}ASSETS/HELMET AOR1/SF V2 Bump_Item.xob"
    PhysicsOnWearEnabled 1
    AnimateCollidersOnWear 1
    SoundInt 110

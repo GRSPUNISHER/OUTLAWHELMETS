@@ -8,87 +8,81 @@ GenericEntity {
   GRS_FirstPersonHideComponent "{6A2F7249F3811C04}" {
   }
   InventoryItemComponent "{6A2F7249F3811C05}" {
-   Attributes SCR_ItemAttributeCollection "{6A2F7249F3811C06}" {
-    ItemDisplayName UIInfo "{6A2F7249F3811C07}" {
-     Name "Comtacs (Tan)"
+   Attributes SCR_ItemAttributeCollection "{E796B463075B980D}" {
+    ItemDisplayName UIInfo "{CCB86CAF815B7AA6}" {
+     Name "Comtac VII (Tan)"
      Description "Ear Pro"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{6A2F7249F3811C00}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{5951CBD295161106}" {
      SizeSetupStrategy Manual
      ItemVolume 10
     }
     CustomAttributes {
-     PreviewRenderAttributes "{6A2F7249F3811C02}" {
+     PreviewRenderAttributes "{3C0F72D0C6475E9C}" {
+      CameraOrbitAngles -25 30 0
       CameraDistanceToItem 1
-      ItemRenderRotation 0 0 0
       FOV 10
-     }
-     AttachmentAttributes "{6A2F7249F3811C03}" {
-      AttachmentType GRS_Helmet_Battery "{6A2F7249F3811C0C}" {
-      }
      }
     }
    }
   }
   MeshObject "{6A2F7249F3811C0D}" {
-   Object "{23C5DAFD00F41B58}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap.xob"
+   Object "{2B94DA340A86F5A7}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap_Item.xob"
   }
   RigidBody "{6A2F7249F3811C0E}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
    ModelGeometry 1
   }
   SCR_SoundDataComponent "{6A2F7249F3811C0F}" {
    m_aAudioSourceConfiguration {
-    SCR_AudioSourceConfiguration "{6A2F7249F3811C11}" {
+    SCR_AudioSourceConfiguration "{EF0E2CEC24FE9460}" {
      m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_PICK_UP"
     }
-    SCR_AudioSourceConfiguration "{6A2F7249F3811C12}" {
+    SCR_AudioSourceConfiguration "{E4D81FD428160BED}" {
      m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_EQUIP"
      m_eFlags 0
     }
-    SCR_AudioSourceConfiguration "{6A2F7249F3811C13}" {
+    SCR_AudioSourceConfiguration "{17AEE3A3AD5DAD9F}" {
      m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_DROP"
     }
    }
   }
   BaseLoadoutClothComponent "{6A2F7249F3811C1C}" {
-   AreaType GRS_Helmet_EarPro "{6A2F7249808EA43C}" {
+   AreaType GRS_Helmet_EarPro "{7CDBCC0568345831}" {
    }
    WornModel "{23C5DAFD00F41B58}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap.xob"
-   ItemModel "{23C5DAFD00F41B58}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap.xob"
+   ItemModel "{2B94DA340A86F5A7}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap_Item.xob"
   }
   ActionsManagerComponent "{6A2F7249F3811C1E}" {
    ActionContexts {
-    UserActionContext "{6A2F7249F3811C1F}" {
-     UIInfo SCR_ActionContextUIInfo "{6A2F7249F3811C19}" {
+    UserActionContext "{DA6B6B06A95658F2}" {
+     UIInfo SCR_ActionContextUIInfo "{3D8A2B12FA78F41D}" {
      }
-     ContextName "user"
-     Position PointInfo "{6A2F7249F3811C1A}" {
+     ContextName "default"
+     Position PointInfo "{821D527D77D1B22A}" {
      }
-     Radius 0.1
+     Radius 0.3
     }
    }
    additionalActions {
-    SCR_EquipWeaponAttachment "{6A2F7249F3811CE4}" {
+    SCR_PickUpItemAction "{0C6BEAF7AA482E40}" {
      ParentContextList {
-      "user"
+      "default"
      }
-     UIInfo SCR_ActionUIInfo "{6A2F7249F3811CE7}" {
-      Name "#AR-UserAction_AttachToWeapon"
-     }
-    }
-    SCR_PickUpItemAction "{6A2F7249F3811CEB}" {
-     ParentContextList {
-      "user"
-     }
-     UIInfo SCR_ActionUIInfo "{6A2F7249F3811CF4}" {
-      Name "#AR-Inventory_Pickup"
+     UIInfo SCR_ActionUIInfo "{24B30FE900EF7F09}" {
+      Name "#AR-Inventory_PickUp"
       m_sIconName "pick-up"
      }
     }
    }
+  }
+  NwkPhysicsMovementComponent "{82D0013B00BE1C73}" {
   }
   RplComponent "{6A2F7249F3811CF5}" {
    "Rpl State Override" Runtime

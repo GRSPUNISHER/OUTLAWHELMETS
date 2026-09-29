@@ -1,0 +1,94 @@
+GenericEntity {
+ ID "7B69A044486A510A"
+ components {
+  ParametricMaterialInstanceComponent "{47BDAE5CB7ED74AF}" {
+  }
+  Persistence "{D15F6910B1B551F9}" {
+  }
+  GRS_FirstPersonHideComponent "{4E71C8906BB58CDC}" {
+  }
+  InventoryItemComponent "{6D16F48F01406DFF}" {
+   Attributes SCR_ItemAttributeCollection "{087542263EACBFE2}" {
+    ItemDisplayName UIInfo "{F9123F052E5F21D1}" {
+     Name "Ops-Core AMP"
+     Description "Ear Pro"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{F4A9D15894D3D342}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{BCA00E79C21E00D0}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{6FC4B301BC15E194}" {
+   Object "{A10B649C875F5078}ASSETS/Helmet Accessories/AMP/OpsCore_AMP_Item.xob"
+  }
+  RigidBody "{D6EF2C3D5EB5C0C0}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{5B3B3A9E65505047}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{23B3836335301763}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{3503CA59682F595C}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{5CD9FD6C5A6CF7F4}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{AEECD51A9B2C07AC}" {
+   AreaType GRS_Helmet_EarPro "{F1156A60BC55013D}" {
+   }
+   WornModel "{895246DE10C64BDE}ASSETS/Helmet Accessories/AMP/OpsCore_AMP.xob"
+   ItemModel "{A10B649C875F5078}ASSETS/Helmet Accessories/AMP/OpsCore_AMP_Item.xob"
+  }
+  ActionsManagerComponent "{149F7890EEF1094A}" {
+   ActionContexts {
+    UserActionContext "{73A46B7B5807B985}" {
+     UIInfo SCR_ActionContextUIInfo "{C580E770387B3E28}" {
+     }
+     ContextName "default"
+     Position PointInfo "{67AE18B1CBC4671F}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{AA81CFA54385649B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{167AFC3BB4591319}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{79570650B55C3D6A}" {
+  }
+  RplComponent "{CD857BE9CA35442A}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{AC5B3EA2CA78ACE4}" {
+  }
+ }
+}

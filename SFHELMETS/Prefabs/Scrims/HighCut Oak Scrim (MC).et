@@ -8,87 +8,81 @@ GenericEntity {
   GRS_FirstPersonHideComponent "{6A2F76AEA0CA7DC5}" {
   }
   InventoryItemComponent "{6A2F76AEA0CA7DC6}" {
-   Attributes SCR_ItemAttributeCollection "{6A2F76AEA0CA7DC1}" {
-    ItemDisplayName UIInfo "{6A2F76AEA0CA7DC3}" {
+   Attributes SCR_ItemAttributeCollection "{F2175676FB47278F}" {
+    ItemDisplayName UIInfo "{BC11AB93A16A4D35}" {
      Name "HighCut Oak Scrim (MC)"
      Description "Helmet Attachment"
     }
-    ItemPhysAttributes ItemPhysicalAttributes "{6A2F76AEA0CA7DCD}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{2F4EF42CDD5E78F0}" {
      SizeSetupStrategy Manual
      ItemVolume 10
     }
     CustomAttributes {
-     PreviewRenderAttributes "{6A2F76AEA0CA7DCF}" {
+     PreviewRenderAttributes "{D6F313D50B8AA25C}" {
+      CameraOrbitAngles -25 30 0
       CameraDistanceToItem 1
-      ItemRenderRotation 0 0 0
       FOV 10
-     }
-     AttachmentAttributes "{6A2F76AEA0CA7DC8}" {
-      AttachmentType GRS_Helmet_Battery "{6A2F76AEA0CA7DCA}" {
-      }
      }
     }
    }
   }
   MeshObject "{6A2F76AEA0CA7DD6}" {
-   Object "{A38A7FC91BE0AD86}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak.xob"
+   Object "{31A96BA22058A9B5}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak_Item.xob"
   }
   RigidBody "{6A2F76AEA0CA7DD0}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
    ModelGeometry 1
   }
   SCR_SoundDataComponent "{6A2F76AEA0CA7DD1}" {
    m_aAudioSourceConfiguration {
-    SCR_AudioSourceConfiguration "{6A2F76AEA0CA7DAC}" {
+    SCR_AudioSourceConfiguration "{97F24CA973D2DA70}" {
      m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_PICK_UP"
     }
-    SCR_AudioSourceConfiguration "{6A2F76AEA0CA7DAF}" {
+    SCR_AudioSourceConfiguration "{1C033625932F9F4C}" {
      m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_EQUIP"
      m_eFlags 0
     }
-    SCR_AudioSourceConfiguration "{6A2F76AEA0CA7DA8}" {
+    SCR_AudioSourceConfiguration "{9E7CDD79172504D7}" {
      m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
      m_sSoundEventName "SOUND_DROP"
     }
    }
   }
   BaseLoadoutClothComponent "{6A2F76AEA0CA7DAB}" {
-   AreaType GRS_Helmet_Scrim "{6A2F76A1160D6DBC}" {
+   AreaType GRS_Helmet_Scrim "{F8E5DC7B69E5C257}" {
    }
    WornModel "{A38A7FC91BE0AD86}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak.xob"
-   ItemModel "{A38A7FC91BE0AD86}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak.xob"
+   ItemModel "{31A96BA22058A9B5}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak_Item.xob"
   }
   ActionsManagerComponent "{6A2F76AEA0CA7DB7}" {
    ActionContexts {
-    UserActionContext "{6A2F76AEA0CA7DB2}" {
-     UIInfo SCR_ActionContextUIInfo "{6A2F76AEA0CA7DB3}" {
+    UserActionContext "{D9F65A3594848AAC}" {
+     UIInfo SCR_ActionContextUIInfo "{4247DCBF65516F4D}" {
      }
-     ContextName "user"
-     Position PointInfo "{6A2F76AEA0CA7DBE}" {
+     ContextName "default"
+     Position PointInfo "{6AE3B05ACDA565BF}" {
      }
-     Radius 0.1
+     Radius 0.3
     }
    }
    additionalActions {
-    SCR_EquipWeaponAttachment "{6A2F76AEA0CA7DB9}" {
+    SCR_PickUpItemAction "{060C4665B48B074B}" {
      ParentContextList {
-      "user"
+      "default"
      }
-     UIInfo SCR_ActionUIInfo "{6A2F76AEA0CA7DBB}" {
-      Name "#AR-UserAction_AttachToWeapon"
-     }
-    }
-    SCR_PickUpItemAction "{6A2F76AEA0CA7D8D}" {
-     ParentContextList {
-      "user"
-     }
-     UIInfo SCR_ActionUIInfo "{6A2F76AEA0CA7D8E}" {
-      Name "#AR-Inventory_Pickup"
+     UIInfo SCR_ActionUIInfo "{32598DC15875AC77}" {
+      Name "#AR-Inventory_PickUp"
       m_sIconName "pick-up"
      }
     }
    }
+  }
+  NwkPhysicsMovementComponent "{22C61B7433E22656}" {
   }
   RplComponent "{6A2F76AEA0CA7D8F}" {
    "Rpl State Override" Runtime

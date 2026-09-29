@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{3F577E20CE8F989A}ASSETS/Helmet Accessories/COUNTERWEIGHT/Data/OpsCoreCounterweight_Coyote_BCR.edds"
+ NMOMap "{79FBAD00815E2493}ASSETS/Helmet Accessories/COUNTERWEIGHT/Data/OpsCoreCounterweight_Coyote_NMO.edds"
+}

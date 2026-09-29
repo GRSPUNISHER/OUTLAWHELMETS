@@ -4,17 +4,28 @@ GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (ba
   ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
    Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
     ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
-     Name "SF V2 (RG)"
-     Description "SFV2 RG"
+     Name "SF V2 Bump (RG)"
+    }
+   }
+  }
+  InventoryItemComponent "{6A2F5CA9179317BC}" {
+   Attributes SCR_ItemAttributeCollection "{6A2F5CA91793164B}" {
+    ItemDisplayName UIInfo "{6A2F5CA917931623}" {
+     Name "SF V2 Bump (RG)"
     }
    }
   }
   MeshObject "{6A2F5CA91793117D}" {
-   Object "{C17B46BC384CC32E}ASSETS/HELMET RG/SF V2 Bump (Rigged).xob"
+   Object "{15C7C27464C3206E}ASSETS/HELMET RG/SF V2 Bump_Item.xob"
   }
   BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
-   WornModel "{C17B46BC384CC32E}ASSETS/HELMET RG/SF V2 Bump (Rigged).xob"
-   ItemModel "{C17B46BC384CC32E}ASSETS/HELMET RG/SF V2 Bump (Rigged).xob"
+   Slots {
+    LoadoutSlotInfo Rails {
+     Prefab "{C322F29625872CC0}Prefabs/Helmets/SF V2 Helmets/Rails/SF_Rails_RG.et"
+    }
+   }
+   WornModel "{CE15168F9B45160F}ASSETS/HELMET RG/SF V2 Bump.xob"
+   ItemModel "{15C7C27464C3206E}ASSETS/HELMET RG/SF V2 Bump_Item.xob"
   }
  }
 }
