@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{936ABC8FFA67EF4E}" {
    Attributes SCR_ItemAttributeCollection "{7580A479F1C3ADF3}" {
     ItemDisplayName UIInfo "{6CE662F7A8B4389A}" {
-     Name "Ops-Core FAST XP Carbon 4-Hole Shell (AOR1)"
+     Name "PR&D - Ops-Core FAST XP Carbon 4-Hole Shell (AOR1)"
      Description "Interchangeable ops-core fast xp carbon 4-hole shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{119294E035203DBD}" {

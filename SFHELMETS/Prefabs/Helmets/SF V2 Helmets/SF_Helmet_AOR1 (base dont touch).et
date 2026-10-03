@@ -10,7 +10,7 @@ GameEntity {
   ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
    Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
     ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
-     Name "SF V2 Helmet"
+     Name "PR&D - SF V2 Helmet"
      Description "Modular SF V2 helmet. Interchangeable shell, removable rails, ear pro, BRS, battery, counterweight, scrim, NVG, light and strobe slots."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA9C13735FD}" {
@@ -33,7 +33,7 @@ GameEntity {
    Enabled 0
    Attributes SCR_ItemAttributeCollection "{6A2F5CA91793164B}" {
     ItemDisplayName UIInfo "{6A2F5CA917931623}" {
-     Name "SF V2 Helmet"
+     Name "PR&D - SF V2 Helmet"
      Description ""
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA917931612}" {
@@ -134,8 +134,8 @@ GameEntity {
     }
     LoadoutSlotInfo HelStroke {
      PivotID "Head"
-     Offset 0.0003 0.1973 0.0552
-     Angles 23.0768 -0.5668 1.9476
+     Offset 0.0001 0.1748 0.0768
+     Angles 0 -179.996 0
      AreaType OUTLAW_Helmet_Strobe "{6A2F5CA917931770}" {
      }
     }
@@ -148,7 +148,7 @@ GameEntity {
     }
     LoadoutSlotInfo NVG {
      PivotID "Head"
-     Offset 0.0016 0.0337 -0.1209
+     Offset -0.0021 0.1365 -0.1213
      Angles 0 -179.996 0
      AreaType OUTLAW_Helmet_NVG "{6A2F5CA917931769}" {
      }

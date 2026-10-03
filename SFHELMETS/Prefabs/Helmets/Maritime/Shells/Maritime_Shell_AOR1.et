@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{9DB254E092CFAEB3}" {
    Attributes SCR_ItemAttributeCollection "{562D02C5FE485240}" {
     ItemDisplayName UIInfo "{8FEB1D6AA70DE393}" {
-     Name "Ops-Core Maritime Shell (AOR1)"
+     Name "PR&D - Ops-Core Maritime Shell (AOR1)"
      Description "Interchangeable ops-core maritime shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{8E4636033A74D3B9}" {

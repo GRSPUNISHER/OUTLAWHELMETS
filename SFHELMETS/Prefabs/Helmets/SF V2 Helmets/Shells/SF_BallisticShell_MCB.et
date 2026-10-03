@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{4FE4296AFBA9777C}" {
    Attributes SCR_ItemAttributeCollection "{9F44EA46C6398A0C}" {
     ItemDisplayName UIInfo "{3C04E139FB132D58}" {
-     Name "SF V2 Ballistic Shell (MCB)"
+     Name "PR&D - SF V2 Ballistic Shell (MCB)"
      Description "Interchangeable sf v2 ballistic shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{411E82A4E8A0CF7C}" {

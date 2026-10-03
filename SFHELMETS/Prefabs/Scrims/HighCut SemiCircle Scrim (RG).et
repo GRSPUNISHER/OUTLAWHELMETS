@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{6A2F76A1D86D0CC2}" {
    Attributes SCR_ItemAttributeCollection "{201917A5755BD036}" {
     ItemDisplayName UIInfo "{EB89815620CC2FD8}" {
-     Name "HighCut SemiCircle Scrim (RG)"
+     Name "PR&D - HighCut SemiCircle Scrim (RG)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{A49B30667968C01F}" {

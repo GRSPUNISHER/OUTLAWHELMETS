@@ -10,7 +10,7 @@ GameEntity {
   ClothNodeStorageComponent "{C5215F025C98AB2E}" {
    Attributes SCR_ItemAttributeCollection "{6FFE0998656B9250}" {
     ItemDisplayName UIInfo "{A33750530BF25614}" {
-     Name "Ops-Core FAST XP Helmet"
+     Name "PR&D - Ops-Core FAST XP Helmet"
      Description "Modular Ops-Core FAST XP helmet. Interchangeable shell, removable rails, ear pro, BRS, battery, counterweight, scrim, NVG, light and strobe slots."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{EF25AFC53A2C7D51}" {
@@ -33,7 +33,7 @@ GameEntity {
    Enabled 0
    Attributes SCR_ItemAttributeCollection "{CCBE235B587B0C33}" {
     ItemDisplayName UIInfo "{7E599C41B942BD3D}" {
-     Name "Ops-Core FAST XP Helmet"
+     Name "PR&D - Ops-Core FAST XP Helmet"
      Description ""
     }
     ItemPhysAttributes ItemPhysicalAttributes "{FFC2D947A0C54E45}" {
@@ -134,8 +134,8 @@ GameEntity {
     }
     LoadoutSlotInfo HelStroke {
      PivotID "Head"
-     Offset 0.0003 0.1973 0.0552
-     Angles 23.0768 -0.5668 1.9476
+     Offset 0.0001 0.1708 0.0768
+     Angles 0 -179.996 0
      AreaType OUTLAW_Helmet_Strobe "{40AD3C6E66EE4959}" {
      }
     }
@@ -148,7 +148,7 @@ GameEntity {
     }
     LoadoutSlotInfo NVG {
      PivotID "Head"
-     Offset 0.0016 0.0337 -0.1209
+     Offset -0.0021 0.1278 -0.1225
      Angles 0 -179.996 0
      AreaType OUTLAW_Helmet_NVG "{D86AB5C41385D1F9}" {
      }

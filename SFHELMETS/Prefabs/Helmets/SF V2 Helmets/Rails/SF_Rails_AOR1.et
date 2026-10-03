@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{19336FD406DADE66}" {
    Attributes SCR_ItemAttributeCollection "{AB0F503D465861CD}" {
     ItemDisplayName UIInfo "{54B5CB295197445B}" {
-     Name "SF V2 ARC Rails (AOR1)"
+     Name "PR&D - SF V2 ARC Rails (AOR1)"
      Description "Removable ARC rails for the SF V2 Bump / Ballistic helmets."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{FAF578C63B02BAED}" {

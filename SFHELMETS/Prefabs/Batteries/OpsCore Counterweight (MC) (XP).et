@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{E2FF4F35BA36FFA8}" {
    Attributes SCR_ItemAttributeCollection "{EF241AEF77A3BA3A}" {
     ItemDisplayName UIInfo "{6A0194E603DCDFB3}" {
-     Name "Ops-Core Counterweight (MC) (XP)"
+     Name "PR&D - Ops-Core Counterweight (MC) (XP)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A43DC44B6CB0029}" {

@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{BEBECADE5BF332C4}" {
    Attributes SCR_ItemAttributeCollection "{8AE1D20BE3B51903}" {
     ItemDisplayName UIInfo "{4605B447A673A5BC}" {
-     Name "Comtac VII (Green) (Maritime)"
+     Name "PR&D - Comtac VII (Green) (Maritime)"
      Description "Ear Pro"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{7A379ABC757913A5}" {

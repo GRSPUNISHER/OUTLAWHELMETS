@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{69E3AC2EDBE90BEB}" {
    Attributes SCR_ItemAttributeCollection "{B34B6A5B68B5D596}" {
     ItemDisplayName UIInfo "{7876BA912E6CDC48}" {
-     Name "SF V2 Bump Shell (RG)"
+     Name "PR&D - SF V2 Bump Shell (RG)"
      Description "Interchangeable sf v2 bump shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{378E16AB227F62A3}" {

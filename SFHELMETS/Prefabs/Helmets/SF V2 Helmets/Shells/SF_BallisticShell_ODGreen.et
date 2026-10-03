@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{23F4CCCDD1ADFC2D}" {
    Attributes SCR_ItemAttributeCollection "{728B34E2E930C81A}" {
     ItemDisplayName UIInfo "{A9A3BFB0134762F1}" {
-     Name "SF V2 Ballistic Shell (OD Green)"
+     Name "PR&D - SF V2 Ballistic Shell (OD Green)"
      Description "Interchangeable sf v2 ballistic shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{7C5B240739701BC7}" {

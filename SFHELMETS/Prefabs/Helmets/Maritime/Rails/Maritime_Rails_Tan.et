@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{001A45CA195BEF45}" {
    Attributes SCR_ItemAttributeCollection "{D68F78FC53F7F7DE}" {
     ItemDisplayName UIInfo "{F4C703DF35828DCE}" {
-     Name "Maritime Rails (Tan)"
+     Name "PR&D - Maritime Rails (Tan)"
      Description "Removable rails for the Ops-Core Maritime helmet."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{47A05B8DBC8B573F}" {

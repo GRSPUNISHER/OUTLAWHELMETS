@@ -1,8 +1,9 @@
 GameProject {
- ID "SFHELMETS"
+ ID "PhaselineHelmets"
  GUID "697C1B4763225DB8"
- TITLE "OUTLAW Helmets"
+ TITLE "Phaseline - Helmets"
  Dependencies {
+  "6F417A32E17A2178"
   "58D0FB3206B6F859"
  }
  Configurations {

@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{11CA817CA1C24F67}" {
    Attributes SCR_ItemAttributeCollection "{2EDA1A6BDB7C3773}" {
     ItemDisplayName UIInfo "{5F9A452C71924CD1}" {
-     Name "Ops-Core AMP (RG) (Maritime)"
+     Name "PR&D - Ops-Core AMP (RG) (Maritime)"
      Description "Ear Pro"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{CB9522DC8E6D4F30}" {

@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{B67C237C8F64D216}" {
    Attributes SCR_ItemAttributeCollection "{0182B0447358F77B}" {
     ItemDisplayName UIInfo "{FE5B5ECC878C6B03}" {
-     Name "BNVD Battery Pack (Maritime)"
+     Name "PR&D - BNVD Battery Pack (Maritime)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{43BF76D08699AAAF}" {

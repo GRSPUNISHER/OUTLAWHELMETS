@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{C440C9A886C18DA3}" {
    Attributes SCR_ItemAttributeCollection "{200152858287B40C}" {
     ItemDisplayName UIInfo "{0BA367415D38AB5C}" {
-     Name "FAST XP Rails (MC)"
+     Name "PR&D - FAST XP Rails (MC)"
      Description "Removable rails for the Ops-Core FAST XP / XP Carbon helmets."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{E702189277B8E8A9}" {

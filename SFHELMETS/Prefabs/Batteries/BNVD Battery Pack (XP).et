@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{10E04CCE45D912E0}" {
    Attributes SCR_ItemAttributeCollection "{608DF2377C439E3F}" {
     ItemDisplayName UIInfo "{8A18C0F99CB25846}" {
-     Name "BNVD Battery Pack (XP)"
+     Name "PR&D - BNVD Battery Pack (XP)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{42C16D0B908E764F}" {

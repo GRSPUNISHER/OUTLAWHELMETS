@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{11F9C1C65D57602E}" {
    Attributes SCR_ItemAttributeCollection "{0B4744E55BC9AB30}" {
     ItemDisplayName UIInfo "{ACE469CBAA0B6E18}" {
-     Name "ShawBrain Pouch (MC) (Maritime)"
+     Name "PR&D - ShawBrain Pouch (MC) (Maritime)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{4D70A0CC54853077}" {

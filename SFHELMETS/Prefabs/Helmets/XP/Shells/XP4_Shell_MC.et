@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{C7A80A030EBD44A8}" {
    Attributes SCR_ItemAttributeCollection "{30FE6A95FAE21396}" {
     ItemDisplayName UIInfo "{2B67F1D6D2C113A8}" {
-     Name "Ops-Core FAST XP 4-Hole Shell (MC)"
+     Name "PR&D - Ops-Core FAST XP 4-Hole Shell (MC)"
      Description "Interchangeable ops-core fast xp 4-hole shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{B243DE66EA59132F}" {

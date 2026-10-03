@@ -60,9 +60,15 @@ class OUTLAW_FirstPersonHideComponent : ScriptComponent
 			return false;
 
 		CharacterControllerComponent controller = character.GetCharacterController();
-		if (!controller)
+		if (controller && !controller.IsInThirdPersonView())
+			return true;
+
+		BaseWorld world = GetGame().GetWorld();
+		if (!world)
 			return false;
 
-		return !controller.IsInThirdPersonView();
+		vector camera[4];
+		world.GetCurrentCamera(camera);
+		return vector.DistanceSq(camera[3], character.EyePosition()) < 0.16;
 	}
 }

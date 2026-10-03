@@ -11,7 +11,7 @@ GameEntity {
   InventoryItemComponent "{14DCEBE81FBB7A6A}" {
    Attributes SCR_ItemAttributeCollection "{799DCDE99B40CB78}" {
     ItemDisplayName UIInfo "{D0D82DF414DA7043}" {
-     Name "Ops-Core FAST XP Carbon Shell (Tan)"
+     Name "PR&D - Ops-Core FAST XP Carbon Shell (Tan)"
      Description "Interchangeable ops-core fast xp carbon shell. Carries the helmet's ballistic protection."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{80E71F3B9EAAE335}" {

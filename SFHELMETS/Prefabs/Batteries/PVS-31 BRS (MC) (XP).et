@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{DF193F8CAC0B84FD}" {
    Attributes SCR_ItemAttributeCollection "{4F8DC952E2675C69}" {
     ItemDisplayName UIInfo "{41C4373EE873CB06}" {
-     Name "PVS-31 BRS (MC) (XP)"
+     Name "PR&D - PVS-31 BRS (MC) (XP)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{473668907B50AF5C}" {

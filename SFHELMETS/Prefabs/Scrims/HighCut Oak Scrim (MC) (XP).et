@@ -11,7 +11,7 @@ GenericEntity {
   InventoryItemComponent "{C4967B804B862303}" {
    Attributes SCR_ItemAttributeCollection "{C63FF778EE9A6426}" {
     ItemDisplayName UIInfo "{D595E016DFF66C82}" {
-     Name "HighCut Oak Scrim (MC) (XP)"
+     Name "PR&D - HighCut Oak Scrim (MC) (XP)"
      Description "Helmet Attachment"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{14F01908730C3693}" {

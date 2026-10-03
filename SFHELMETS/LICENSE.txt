@@ -1,0 +1,96 @@
+Phaseline - Helmets - LICENSE
+=============================
+Version 1.0, 2 October 2026
+
+Copyright (c) 2026 the Author. All rights reserved.
+
+IN SHORT: you may USE this mod (play it, run it on your server, show it in
+videos). You may NOT EDIT it, reupload it, or make it a dependency of your own
+mod. The full terms below are what count.
+
+
+"The Mod" means the Arma Reforger addon "Phaseline - Helmets"
+(addon GUID 697C1B4763225DB8): every file in it, including scripts, prefabs,
+configs, layouts, models, textures, materials, sounds, images and text, in
+packed or unpacked form.
+
+"The Author" means the creator of the Mod, who publishes it on the official
+Arma Reforger Workshop.
+
+"The Official Workshop Item" means the Workshop page the Author publishes the
+Mod on.
+
+The Mod is licensed, not sold or given away. Anything this license does not
+expressly permit is forbidden.
+
+
+1. WHAT YOU MAY DO
+
+  a) Subscribe to the Official Workshop Item and play with the Mod.
+  b) Run the Mod on any server, public or private. Load it from the Official
+     Workshop Item alongside any other mods.
+  c) Make and share videos, streams, screenshots and reviews that show the
+     Mod, as long as you credit the Mod by name.
+
+
+2. WHAT YOU MAY NOT DO
+
+  a) NO EDITING. Do not modify, adapt, translate, retexture, recolour or
+     rebalance the Mod or any part of it, and do not make derivative works
+     from it.
+  b) NO DEPENDENCIES. Do not publish or distribute any addon, mod, scenario,
+     modpack or other content that lists the Mod as a dependency, requires
+     it, or is built on top of it.
+  c) NO PATCHING. No other addon may override, extend, replace or hook into
+     the Mod's scripts, classes, prefabs, configs or other resources. That
+     covers "modded" classes, prefab or config overrides, inheritance and
+     compatibility patches.
+  d) NO REUPLOADS. Do not reupload, mirror, repack or redistribute the Mod or
+     any of its files, in whole or in part, by any means. That includes
+     modpacks, merged addons and private or unlisted Workshop items.
+  e) NO EXTRACTION. Do not extract, unpack, decompile or copy the Mod's
+     assets or code to use anywhere else, in Arma Reforger or any other game
+     or project.
+  f) NO SELLING. Do not sell the Mod, charge for access to it, or put it
+     behind a paywall, donation or subscription perk.
+  g) NO MISREPRESENTATION. Do not claim the Mod, or any part of it, as your
+     own work.
+
+
+3. EXCEPTIONS
+
+  a) The Author's own addons are exempt from section 2. This includes addons
+     made to work with the Mod, such as
+     Phaseline - Helmets RHS Compat, and Phaseline - Night Vision Systems,
+     which the Mod depends on.
+  b) Anyone else needs the Author's written permission to do anything that
+     section 2 forbids. Permission covers only what the Author writes down
+     and can be withdrawn.
+
+
+4. THIRD-PARTY CONTENT
+
+Some parts of the Mod are built from third-party content: 3D models, textures
+or reference material. That content belongs to its owners and stays under
+their own terms. This license grants no rights to it, and the restrictions in
+section 2 apply to it in full.
+
+Arma Reforger and its assets belong to Bohemia Interactive a.s. Nothing in
+this license limits any right Bohemia Interactive holds under the Arma
+Reforger Workshop terms.
+
+
+5. TERMINATION
+
+If you break this license, every permission it gives you ends straight away.
+The Author may then report the infringing content to the platform it is
+hosted on and take any other action the law allows.
+
+
+6. NO WARRANTY
+
+The Mod is provided "as is", without warranty of any kind. The Author is not
+liable for any damage, data loss or other harm that comes from using it.
+
+
+If you're unsure whether something is allowed, ask the Author first.

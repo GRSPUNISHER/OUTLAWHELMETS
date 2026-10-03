@@ -10,7 +10,7 @@ GameEntity {
   ClothNodeStorageComponent "{6E47288D7F45166B}" {
    Attributes SCR_ItemAttributeCollection "{D8C952A411EB23DA}" {
     ItemDisplayName UIInfo "{B572E7EB04CEFC87}" {
-     Name "Ops-Core Maritime Helmet"
+     Name "PR&D - Ops-Core Maritime Helmet"
      Description "Modular Ops-Core Maritime helmet. Interchangeable shell, removable rails, ear pro, BRS, battery, counterweight, scrim, NVG, light and strobe slots."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{D3EAEE45E9AE9DBA}" {
@@ -33,7 +33,7 @@ GameEntity {
    Enabled 0
    Attributes SCR_ItemAttributeCollection "{5686D4FC2CCA2F1E}" {
     ItemDisplayName UIInfo "{CF79AC97065603E6}" {
-     Name "Ops-Core Maritime Helmet"
+     Name "PR&D - Ops-Core Maritime Helmet"
      Description ""
     }
     ItemPhysAttributes ItemPhysicalAttributes "{CDD7F9FD9AF85CB4}" {
@@ -134,8 +134,8 @@ GameEntity {
     }
     LoadoutSlotInfo HelStroke {
      PivotID "Head"
-     Offset 0 0.094 -0.1017
-     Angles 3.95 180 0
+     Offset 0.0001 0.1727 0.0768
+     Angles 0 -179.996 0
      AreaType OUTLAW_Helmet_Strobe "{8EDE82B80B39FDF3}" {
      }
     }
@@ -148,7 +148,7 @@ GameEntity {
     }
     LoadoutSlotInfo NVG {
      PivotID "Head"
-     Offset 0.0016 0.0337 -0.1209
+     Offset -0.0021 0.1302 -0.1230
      Angles 0 -179.996 0
      AreaType OUTLAW_Helmet_NVG "{D2BD3B6A9ABC651B}" {
      }
