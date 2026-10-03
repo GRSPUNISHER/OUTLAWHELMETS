@@ -2,10 +2,11 @@ GenericEntity {
  ID "C876966A791412CB"
  components {
   ParametricMaterialInstanceComponent "{084EF4F2D9D0A285}" {
+   UserParamAlpha 0
   }
   Persistence "{7C4540C78A90A1E9}" {
   }
-  GRS_FirstPersonHideComponent "{AFCD93923C941FE0}" {
+  OUTLAW_FirstPersonHideComponent "{AFCD93923C941FE0}" {
   }
   InventoryItemComponent "{DC78AB4B5F228DB1}" {
    Attributes SCR_ItemAttributeCollection "{9AC189FB3F15E035}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{AC21CA8514C544C7}" {
-   AreaType GRS_Helmet_Battery "{6888288889227251}" {
+   AreaType OUTLAW_Helmet_Counterweight "{6888288889227251}" {
    }
    WornModel "{BD9214E20B1073A1}ASSETS/Helmet Accessories/COUNTERWEIGHT/counterweight.xob"
    ItemModel "{FA111EEBC53570A7}ASSETS/Helmet Accessories/COUNTERWEIGHT/counterweight_Item.xob"

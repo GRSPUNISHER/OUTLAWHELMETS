@@ -1,0 +1,59 @@
+MetaFileClass {
+ Name "{28AB430C12940535}ASSETS/XP/XP ODGreen/XP4Shell.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{B0C999FE79D6F102}" {
+     SourceMaterial "XP1"
+     AssignedMaterial "{D69BA081E5A78496}ASSETS/XP/XP ODGreen/Data/XP_XP1H4.emat"
+    }
+    MaterialAssignClass "{A0104163DBDFBBDE}" {
+     SourceMaterial "XP4M"
+     AssignedMaterial "{71DA8B9800C18A34}ASSETS/XP/XP ODGreen/Data/XP_XP4M.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XP4_ShellOnly {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_Helmet {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{CF50027087BA3402}Common/Materials/Game/PersonalProtection/hard_aramid_7.3mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{8985C0157EF5A15D}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{28D13D3094071951}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{17A015C7E5C12E98}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{018043DFA3D5FB53}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{55465454732845BF}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{98557EA0FF142DFC}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

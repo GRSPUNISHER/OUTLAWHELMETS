@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "97AE0599506C9B6E"
+ components {
+  ParametricMaterialInstanceComponent "{CD6F85421C51DA4E}" {
+   UserParamAlpha 0
+  }
+  Persistence "{36B57280CD67CC71}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{20F30872716C4485}" {
+  }
+  InventoryItemComponent "{DF193F8CAC0B84FD}" {
+   Attributes SCR_ItemAttributeCollection "{4F8DC952E2675C69}" {
+    ItemDisplayName UIInfo "{41C4373EE873CB06}" {
+     Name "PVS-31 BRS (MC) (XP)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{473668907B50AF5C}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{ADB9FF228B78A9B4}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{5BC893EA7B432746}" {
+   Object "{DA0C468642D12B7C}ASSETS/Helmet Accessories/BATTERYPACK/XP/batterypack_XP_Item.xob"
+  }
+  RigidBody "{BACF806FD994E336}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{82B7C46D1D430EB0}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{31DDF31C34EE0769}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{15F874159E5EEF01}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{83CAEDCB2C8D37F6}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{F25D264E63DCF8FC}" {
+   AreaType OUTLAW_Helmet_XPBRS "{0DD870D78FAC4E52}" {
+   }
+   WornModel "{A75AB82AFF19E21F}ASSETS/Helmet Accessories/BATTERYPACK/XP/batterypack_XP.xob"
+   ItemModel "{DA0C468642D12B7C}ASSETS/Helmet Accessories/BATTERYPACK/XP/batterypack_XP_Item.xob"
+  }
+  ActionsManagerComponent "{F3C6C9D14935DB0C}" {
+   ActionContexts {
+    UserActionContext "{9D7903781C525D1C}" {
+     UIInfo SCR_ActionContextUIInfo "{33AB23A0541DB079}" {
+     }
+     ContextName "default"
+     Position PointInfo "{1A3950C205498A29}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{F08D6E5CAD3BAC1A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{BA5A2EDE9BDC3B2C}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{E36A68FD7438F04A}" {
+  }
+  RplComponent "{1399C644689222D0}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{5B496508C071BF56}" {
+  }
+ }
+}

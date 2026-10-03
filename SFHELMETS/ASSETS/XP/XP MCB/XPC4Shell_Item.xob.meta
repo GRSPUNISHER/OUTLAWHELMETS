@@ -1,0 +1,62 @@
+MetaFileClass {
+ Name "{B01BFE650EDC5DB1}ASSETS/XP/XP MCB/XPC4Shell_Item.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{B0DD05AFF6E3D515}" {
+     SourceMaterial "Carbon1"
+     AssignedMaterial "{D0857198C230FE05}ASSETS/XP/XP MCB/Data/XP_Carbon1.emat"
+    }
+    MaterialAssignClass "{E2DD5205A81D4867}" {
+     SourceMaterial "XP1"
+     AssignedMaterial "{9A7EFA3350E2AE5B}ASSETS/XP/XP MCB/Data/XP_XP1H4.emat"
+    }
+    MaterialAssignClass "{6E4C94555E47B2BE}" {
+     SourceMaterial "XP4M"
+     AssignedMaterial "{D926BB98E515178D}ASSETS/XP/XP MCB/Data/XP_XP4M.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XPC4_ShellOnly {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Item {
+     LayerPreset "ItemFireView"
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{0F22D73CBFAAFB3E}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{07ADB3ADA6F0BAB9}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{3960CF915AC90578}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{CB70AFAFF9BDE690}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{78C2E2A875202248}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{7C71D8984AD8CEF6}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

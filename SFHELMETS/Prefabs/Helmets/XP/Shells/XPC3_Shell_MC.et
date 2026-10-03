@@ -1,0 +1,116 @@
+GameEntity {
+ ID "3EC077A29136B16D"
+ components {
+  ParametricMaterialInstanceComponent "{8664A7F55C0AF81B}" {
+   UserParamAlpha 0
+  }
+  Persistence "{38679E2409BA8701}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{F399E046839D073E}" {
+  }
+  InventoryItemComponent "{33B1FFFC0ED91DA4}" {
+   Attributes SCR_ItemAttributeCollection "{5A4E82232ED2E58C}" {
+    ItemDisplayName UIInfo "{C5162E747E1C0418}" {
+     Name "Ops-Core FAST XP Carbon Shell (MC)"
+     Description "Interchangeable ops-core fast xp carbon shell. Carries the helmet's ballistic protection."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{F889CAA5B5BABB3E}" {
+     Weight 1
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 15
+     ItemVolume 2000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{860F5B79723CFE97}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 1.5
+      CameraOffset 0 -0.02 0
+      FOV 10
+     }
+    }
+   }
+  }
+  ColliderHistoryComponent "{0A99947AEE8788EE}" {
+  }
+  SCR_ArmorDamageManagerComponent "{799D71545382D5B7}" {
+   "Additional hit zones" {
+    SCR_ArmorHitZone helmet {
+     ColliderNames {
+      "UTM_Helmet"
+     }
+     HZDefault 1
+     MaxHealth 10000
+     m_eHitZoneGroup HEAD
+    }
+   }
+   m_fPassedDamageScale 4
+   m_bIsDetachable 0
+  }
+  MeshObject "{9E61B2AE2FF33006}" {
+   Object "{089F9C86B710D042}ASSETS/XP/XP MC/XPC3Shell_Item.xob"
+  }
+  RigidBody "{D27EB72D0AC21E20}" {
+   Mass 1
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{B571CE066BA61BA4}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{D8AA97B75E571BC8}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{F3B2F1B7274330F9}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{C98F68243C26930B}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{06ACEB02FE931944}" {
+   AreaType OUTLAW_Helmet_XPShell "{B19C3C4C6730357E}" {
+   }
+   WornModel "{CB5C8C2F7651BC3C}ASSETS/XP/XP MC/XPC3Shell.xob"
+   ItemModel "{089F9C86B710D042}ASSETS/XP/XP MC/XPC3Shell_Item.xob"
+   PhysicsOnWearEnabled 1
+   AnimateCollidersOnWear 1
+  }
+  ActionsManagerComponent "{BA364FFADBE6E58B}" {
+   ActionContexts {
+    UserActionContext "{CA8F1265A5DEC540}" {
+     UIInfo SCR_ActionContextUIInfo "{7AEAB1750EA27003}" {
+     }
+     ContextName "default"
+     Position PointInfo "{90CE36DA7CB414C0}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{C93683C7D0A4D3B2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{4E80A8CD3A113903}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{6C42FFB64E91C7FA}" {
+  }
+  RplComponent "{CA627823CA2A20F6}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{276EA2D2064463AE}" {
+  }
+ }
+}

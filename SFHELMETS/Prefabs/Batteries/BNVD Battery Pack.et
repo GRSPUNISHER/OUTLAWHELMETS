@@ -2,10 +2,11 @@ GenericEntity {
  ID "A6544B3AF44AF287"
  components {
   ParametricMaterialInstanceComponent "{4AFA24E4941945E0}" {
+   UserParamAlpha 0
   }
   Persistence "{190AFE0184FABAD4}" {
   }
-  GRS_FirstPersonHideComponent "{70174436867480A9}" {
+  OUTLAW_FirstPersonHideComponent "{70174436867480A9}" {
   }
   InventoryItemComponent "{9ABB5A74F480242F}" {
    Attributes SCR_ItemAttributeCollection "{7FD2D78B6E717B4F}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{535B23056593EA79}" {
-   AreaType GRS_Helmet_Battery "{D25432A074113D23}" {
+   AreaType OUTLAW_Helmet_Battery "{D25432A074113D23}" {
    }
    WornModel "{A9601CD467097E4A}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery.xob"
    ItemModel "{67F475C56B1A1565}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery_Item.xob"

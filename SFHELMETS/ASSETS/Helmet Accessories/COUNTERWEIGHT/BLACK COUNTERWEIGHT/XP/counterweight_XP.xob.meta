@@ -1,0 +1,45 @@
+MetaFileClass {
+ Name "{828A5DC237F15789}ASSETS/Helmet Accessories/COUNTERWEIGHT/BLACK COUNTERWEIGHT/XP/counterweight_XP.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{33908700DFCACD74}" {
+     SourceMaterial "MI_NVG_Counterweight_OpsCore_Kit_Coyote"
+     AssignedMaterial "{AF0A320350A02CFF}ASSETS/Helmet Accessories/COUNTERWEIGHT/BLACK COUNTERWEIGHT/Data/MI_NVG_Counterweight_OpsCore_Kit_Coyote.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XP_Counterweight {
+    }
+   }
+   Common TXOCommonClass "{38251E87734C759C}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{57720C878AB325D3}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{4A6612918C18A8DD}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{F659573896515415}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{7956C36392CAF6CE}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{0EAE54240A593EF7}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

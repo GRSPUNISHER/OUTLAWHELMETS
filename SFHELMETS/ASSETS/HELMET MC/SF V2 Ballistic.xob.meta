@@ -6,7 +6,11 @@ MetaFileClass {
    MaterialAssigns {
     MaterialAssignClass "{DA1D5F66259CD426}" {
      SourceMaterial "SF"
-     AssignedMaterial "{F92F1DD36E57EDCB}ASSETS/HELMET/Data/SF.emat"
+     AssignedMaterial "{D23E71DFB360EC36}ASSETS/HELMET MC/Data/SFBallistic.emat"
+    }
+   }
+   MeshParams {
+    MeshParam SF_Ballistic {
     }
    }
    GeometryParams {
@@ -21,6 +25,9 @@ MetaFileClass {
    }
    Common TXOCommonClass "{0D8BB7A03DE731B3}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{D3FDF9C0BEE36D36}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -41,6 +48,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{A455C978675E06A4}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }

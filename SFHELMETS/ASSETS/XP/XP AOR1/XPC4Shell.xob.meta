@@ -1,0 +1,63 @@
+MetaFileClass {
+ Name "{3C383C71594D3368}ASSETS/XP/XP AOR1/XPC4Shell.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{8E3F36C0D94DA270}" {
+     SourceMaterial "Carbon1"
+     AssignedMaterial "{0BA06380853C7C06}ASSETS/XP/XP AOR1/Data/XP_Carbon1.emat"
+    }
+    MaterialAssignClass "{3C6D4C2711F0326D}" {
+     SourceMaterial "XP1"
+     AssignedMaterial "{BABA660DE9E74E8B}ASSETS/XP/XP AOR1/Data/XP_XP1H4.emat"
+    }
+    MaterialAssignClass "{F1AF065ACD2D0AC8}" {
+     SourceMaterial "XP4M"
+     AssignedMaterial "{6692DFC8A69CE899}ASSETS/XP/XP AOR1/Data/XP_XP4M.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XPC4_ShellOnly {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_Helmet {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{CF50027087BA3402}Common/Materials/Game/PersonalProtection/hard_aramid_7.3mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{8C99C36D68EB9A58}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{56CE12CDA5FD608C}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{038344E51BB1C712}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{C77FE0EC77B84AB5}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{08C2DB4F180F921D}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{4C9FE428D3F8E04D}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

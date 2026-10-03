@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "B8509B4C8764FA84"
+ components {
+  ParametricMaterialInstanceComponent "{A6BDE19FB0174485}" {
+   UserParamAlpha 0
+  }
+  Persistence "{EEE7AA8A8CB99482}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{825A3AE66E40FF55}" {
+  }
+  InventoryItemComponent "{BEBECADE5BF332C4}" {
+   Attributes SCR_ItemAttributeCollection "{8AE1D20BE3B51903}" {
+    ItemDisplayName UIInfo "{4605B447A673A5BC}" {
+     Name "Comtac VII (Green) (Maritime)"
+     Description "Ear Pro"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{7A379ABC757913A5}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{98F157E67D29A121}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{0842FABDF1953EFF}" {
+   Object "{923076371E6E8D35}ASSETS/Helmet Accessories/COMTACS/GREEN COMTACS/comtacviinostrap_Item.xob"
+  }
+  RigidBody "{B8F6E1B8EE538FEC}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{F4A0518AC7FE4627}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5EF6BAD0A1940A08}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{67B7D8969452D038}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{E0C14859C5CCA60B}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{9C9686646AA96598}" {
+   AreaType OUTLAW_Helmet_MaritimeEarPro "{7B8BEF001C522293}" {
+   }
+   WornModel "{3C111B3ED2B0EFBA}ASSETS/Helmet Accessories/COMTACS/GREEN COMTACS/comtacviinostrap.xob"
+   ItemModel "{923076371E6E8D35}ASSETS/Helmet Accessories/COMTACS/GREEN COMTACS/comtacviinostrap_Item.xob"
+  }
+  ActionsManagerComponent "{EE01E8876A1EF39D}" {
+   ActionContexts {
+    UserActionContext "{99DF6B47E2E30794}" {
+     UIInfo SCR_ActionContextUIInfo "{BC7685D1F6ED662C}" {
+     }
+     ContextName "default"
+     Position PointInfo "{E21395F16C1B0648}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{623C7ED89DD150A2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{66008B75C0E6912A}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{33622B223242B830}" {
+  }
+  RplComponent "{0EFCA19C396B9355}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{C03C4CE912C35E0C}" {
+  }
+ }
+}

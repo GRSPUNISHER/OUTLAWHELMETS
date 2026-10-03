@@ -1,0 +1,45 @@
+MetaFileClass {
+ Name "{ACA03A979D69B84A}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/XP/HighCut Scrim Oak_XP.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{B9A250690796C7DF}" {
+     SourceMaterial "High_Cut_Helmet_Scrim_Oak"
+     AssignedMaterial "{196FD2400B7A8FE8}ASSETS/Helmet Accessories/Scrims/Data/High_Cut_Helmet_Scrim_Oak.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XP_ScrimOak {
+    }
+   }
+   Common TXOCommonClass "{5F138CADE9C8004F}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{4D2CE583E4FAFBBD}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{AF91A72563A6B0BD}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{328A5DDA68C523BC}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{1E617E4553A4B3B0}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{2DE7577FE5ACF604}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

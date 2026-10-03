@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "C512E559AACE51AD"
+ components {
+  ParametricMaterialInstanceComponent "{C7FD82578AAF7E8E}" {
+   UserParamAlpha 0
+  }
+  Persistence "{EA51AC69B4FF7496}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{952C12C282DF9098}" {
+  }
+  InventoryItemComponent "{793F32CA67DCA0FF}" {
+   Attributes SCR_ItemAttributeCollection "{0FEE97F11BB3CEA0}" {
+    ItemDisplayName UIInfo "{1729557EAEEE7501}" {
+     Name "PVS-31 BRS (OD) (Maritime)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{A22CBC4CBFF49A49}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{E44ACFD7FAF37444}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{F790A2005853770D}" {
+   Object "{36C5CBF4D94FBCE7}ASSETS/Helmet Accessories/BATTERYPACK/OD BRS/Maritime/batterypack_Maritime_Item.xob"
+  }
+  RigidBody "{8E3DB7B2F3449CE5}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{AB1A7B8B40D6A4D2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{ECBABF54EF23F02B}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{4F835030B19AFD07}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{DC9D025A434A96D9}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{455D99B9442528F2}" {
+   AreaType OUTLAW_Helmet_MaritimeBRS "{1E35CE5367163754}" {
+   }
+   WornModel "{089BC710CC056175}ASSETS/Helmet Accessories/BATTERYPACK/OD BRS/Maritime/batterypack_Maritime.xob"
+   ItemModel "{36C5CBF4D94FBCE7}ASSETS/Helmet Accessories/BATTERYPACK/OD BRS/Maritime/batterypack_Maritime_Item.xob"
+  }
+  ActionsManagerComponent "{5F20B259907C3205}" {
+   ActionContexts {
+    UserActionContext "{91F9EA0FD558B150}" {
+     UIInfo SCR_ActionContextUIInfo "{311BD61113B21A94}" {
+     }
+     ContextName "default"
+     Position PointInfo "{528DC870D7E38F52}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{637CC6CEAD9EF1F0}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{5462E2FF096A822B}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{6AEA924D18F69137}" {
+  }
+  RplComponent "{6832D37B79A132C2}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{794B0B62FC3F93BB}" {
+  }
+ }
+}

@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "33A37B88B8688319"
+ components {
+  ParametricMaterialInstanceComponent "{9C06EA9616520466}" {
+   UserParamAlpha 0
+  }
+  Persistence "{79518A3A9CBC12BE}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{9DA5D97325C63DAD}" {
+  }
+  InventoryItemComponent "{11F9C1C65D57602E}" {
+   Attributes SCR_ItemAttributeCollection "{0B4744E55BC9AB30}" {
+    ItemDisplayName UIInfo "{ACE469CBAA0B6E18}" {
+     Name "ShawBrain Pouch (MC) (Maritime)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{4D70A0CC54853077}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{4145B79E048E6257}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{7B52185D2D6E18FF}" {
+   Object "{AD09D6C51C399A51}ASSETS/Helmet Accessories/ShawBrainPouch/MC SHAWBRAIN/Maritime/shawbrainpouch_Maritime_Item.xob"
+  }
+  RigidBody "{BB51572FA89FFA32}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{779680D419D7E3C2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{10E0312C976DFD35}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{D5AEC5B2D4CDA84B}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{71472B297C1436A7}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{A5253EB5EF9B1FA1}" {
+   AreaType OUTLAW_Helmet_MaritimeBattery "{AE9C1422EDB87C7B}" {
+   }
+   WornModel "{A3B8F9EE6D74BAEF}ASSETS/Helmet Accessories/ShawBrainPouch/MC SHAWBRAIN/Maritime/shawbrainpouch_Maritime.xob"
+   ItemModel "{AD09D6C51C399A51}ASSETS/Helmet Accessories/ShawBrainPouch/MC SHAWBRAIN/Maritime/shawbrainpouch_Maritime_Item.xob"
+  }
+  ActionsManagerComponent "{6B09B001605F68B4}" {
+   ActionContexts {
+    UserActionContext "{6503441A574A4808}" {
+     UIInfo SCR_ActionContextUIInfo "{9F3A2AC895177D13}" {
+     }
+     ContextName "default"
+     Position PointInfo "{E23FEE068E16FEED}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{1926DD5C6074E57B}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{BFE2F2BB0F3A27F0}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{F77773E37C42FCDF}" {
+  }
+  RplComponent "{6F66E4103CB49565}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{8714A35060F50C6D}" {
+  }
+ }
+}

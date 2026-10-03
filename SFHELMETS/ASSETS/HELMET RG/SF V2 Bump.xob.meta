@@ -9,6 +9,10 @@ MetaFileClass {
      AssignedMaterial "{3EF49F1B2BE18C65}ASSETS/HELMET RG/Data/SF.emat"
     }
    }
+   MeshParams {
+    MeshParam SF_Bump {
+    }
+   }
    GeometryParams {
     GeometryParam UTM_Helmet {
      LayerPreset "FireGeo"
@@ -21,6 +25,9 @@ MetaFileClass {
    }
    Common TXOCommonClass "{79F8CABB2C5EE290}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{ABE39EAAE70D62CF}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -41,6 +48,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{FA2759A6A857541D}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }

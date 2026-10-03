@@ -1,0 +1,116 @@
+GameEntity {
+ ID "1DBFB2CCB0580158"
+ components {
+  ParametricMaterialInstanceComponent "{04DDAD28BD9F35DE}" {
+   UserParamAlpha 0
+  }
+  Persistence "{03FA864A2892BDCA}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{2FD57785441188C2}" {
+  }
+  InventoryItemComponent "{111EF597F21E17B6}" {
+   Attributes SCR_ItemAttributeCollection "{4E69E12779705678}" {
+    ItemDisplayName UIInfo "{ABFE419CC3C00237}" {
+     Name "Ops-Core Maritime Shell (Tan)"
+     Description "Interchangeable ops-core maritime shell. Carries the helmet's ballistic protection."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{31F2657FDE4949C8}" {
+     Weight 1
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 15
+     ItemVolume 2000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{04FFC6D6CC0ED66C}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 1.5
+      CameraOffset 0 -0.02 0
+      FOV 10
+     }
+    }
+   }
+  }
+  ColliderHistoryComponent "{9EB79C29A835E5A7}" {
+  }
+  SCR_ArmorDamageManagerComponent "{86C746EFBD1DA185}" {
+   "Additional hit zones" {
+    SCR_ArmorHitZone helmet {
+     ColliderNames {
+      "UTM_Helmet"
+     }
+     HZDefault 1
+     MaxHealth 10000
+     m_eHitZoneGroup HEAD
+    }
+   }
+   m_fPassedDamageScale 4
+   m_bIsDetachable 0
+  }
+  MeshObject "{8457D556E83CA938}" {
+   Object "{58C5B534C6BC7AA0}ASSETS/MARITIME/MARITIME Tan/MaritimeShell_Item.xob"
+  }
+  RigidBody "{5A84EE67E9E27C95}" {
+   Mass 1
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{2E81581D3E21CC8E}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5866A6BEA46C46EA}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{60B93D54D18E4A69}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{35A5C3AB761564D9}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{19B9FC6271CC4E6C}" {
+   AreaType OUTLAW_Helmet_MaritimeShell "{83E4422F2C416ECC}" {
+   }
+   WornModel "{F69629FD1DC6C43F}ASSETS/MARITIME/MARITIME Tan/MaritimeShell.xob"
+   ItemModel "{58C5B534C6BC7AA0}ASSETS/MARITIME/MARITIME Tan/MaritimeShell_Item.xob"
+   PhysicsOnWearEnabled 1
+   AnimateCollidersOnWear 1
+  }
+  ActionsManagerComponent "{A924846E188D7C76}" {
+   ActionContexts {
+    UserActionContext "{3512CE5A1D4CE0AF}" {
+     UIInfo SCR_ActionContextUIInfo "{E12D3C48E10427C2}" {
+     }
+     ContextName "default"
+     Position PointInfo "{01F285F419FE1651}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{37BD0FAA5F0AC143}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{29B67BEC3E6EA3C7}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{3522C9E531C4C6E3}" {
+  }
+  RplComponent "{E3596E7C9764B63A}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{245398FCA3542CD8}" {
+  }
+ }
+}

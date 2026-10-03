@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{1AC5B6A54FDC390C}ASSETS/MARITIME/MARITIME ODGreen/Data/ODGreenMaritimeMT_BCR.edds"
+ NMOMap "{95AF0C2F2A687408}ASSETS/MARITIME/MARITIME ODGreen/Data/ODGreenMaritimeMT_NMO.edds"
+}

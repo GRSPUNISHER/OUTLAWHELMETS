@@ -2,10 +2,11 @@ GenericEntity {
  ID "6A2F7248545DFE65"
  components {
   ParametricMaterialInstanceComponent "{6A2F7248545DFE68}" {
+   UserParamAlpha 0
   }
   Persistence "{6A2F7248545DFE13}" {
   }
-  GRS_FirstPersonHideComponent "{6A2F7248545DFE1E}" {
+  OUTLAW_FirstPersonHideComponent "{6A2F7248545DFE1E}" {
   }
   InventoryItemComponent "{6A2F7248545DFE1F}" {
    Attributes SCR_ItemAttributeCollection "{310BC23F32A8F520}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{6A2F7248545DFE3E}" {
-   AreaType GRS_Helmet_Battery "{9313DDFE3F251415}" {
+   AreaType OUTLAW_Helmet_BRS "{9313DDFE3F251415}" {
    }
    WornModel "{7D1B83303EEC5792}ASSETS/Helmet Accessories/BATTERYPACK/batterypack.xob"
    ItemModel "{387DB50C0A3411C9}ASSETS/Helmet Accessories/BATTERYPACK/batterypack_Item.xob"

@@ -12,27 +12,42 @@ $grp GenericEntity {
   coords 136.373 1 133.997
  }
 }
-GameEntity : "{0DAB3BF7F61BB80E}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 .et" {
- coords 131.506 1 136.502
-}
-GameEntity : "{29E039CB2FBAF2A7}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_ODGreen.et" {
- coords 134.488 1 136.505
-}
 GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
  coords 129.303 1 134.896
 }
-GameEntity : "{76ABFA993E5A2555}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_MC.et" {
- coords 132.495 1 136.501
-}
-GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et" {
- coords 130.491 1 136.5
-}
-GameEntity : "{AFF29E52DF371796}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_MCB.et" {
- coords 133.487 1 136.504
-}
-GameEntity : "{DCFD885097E15F80}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_RG.et" {
+GameEntity : "{6107B5996D3949BB}Prefabs/Helmets/Maritime/Shells/Maritime_Shell_AOR1.et" {
  coords 135.49 1 136.501
 }
-GameEntity : "{F184F040691569B6}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_Tan.et" {
+$grp GameEntity : "{8CACB79B18F0B611}Prefabs/Helmets/Maritime/Maritime_Helmet.et" {
+ {
+  coords 131.506 1 136.502
+ }
+ {
+  coords 130.686 1 135.811
+ }
+}
+$grp GameEntity : "{930546500F935E9B}Prefabs/Helmets/XP/XP_Helmet.et" {
+ {
+  coords 132.495 1 136.501
+ }
+ {
+  coords 132.183 1 135.699
+ }
+}
+GameEntity : "{94409732C01EF4CF}Prefabs/Helmets/XP/Shells/XP4_Shell_RG.et" {
  coords 136.504 1 136.507
+}
+GameEntity : "{979B60A0DEA1F882}Prefabs/Helmets/SF V2 Helmets/Shells/SF_BumpShell_MC.et" {
+ coords 133.487 1 136.504
+}
+$grp GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et" {
+ {
+  coords 130.491 1 136.5
+ }
+ {
+  coords 131.594 1 135.748
+ }
+}
+GameEntity : "{C4032243ACCC5CA7}Prefabs/Helmets/XP/Shells/XPC4_Shell_Tan.et" {
+ coords 134.488 1 136.505
 }

@@ -1,0 +1,45 @@
+MetaFileClass {
+ Name "{A5FDE3108AA052AF}ASSETS/Helmet Accessories/BATTERYPACK/OD BRS/batterypack.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{D8F7AB37173BD290}" {
+     SourceMaterial "MI_PVS31_BRS_MC"
+     AssignedMaterial "{1C0ACE6BA9E7F5F8}ASSETS/Helmet Accessories/BATTERYPACK/OD BRS/Data/MI_PVS31_BRS_MC.emat"
+    }
+   }
+   MeshParams {
+    MeshParam "SM_PVS31_BRS.001" {
+    }
+   }
+   Common TXOCommonClass "{E49D513A6E3A2A3C}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{C2F616813D6EAF7B}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{E08D550ADBDABA14}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{ED2890FB1BD74B64}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{B8F9CA8E704A39B7}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{865159E9FE32ED33}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

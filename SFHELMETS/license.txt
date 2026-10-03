@@ -1,0 +1,273 @@
+GRS Mod License v1.0
+For this GRS Mod and other GRS Mod Team releases citing this license
+Effective: June 2026
+
+This content is provided under the terms of this custom license exclusively for non-commercial use within Arma Reforger.
+
+All models, textures, materials, scripts, configurations, and other content included in this mod are either original works created by GRS or content legally obtained through licensed marketplaces, direct agreements with creators, or other authorized sources.
+
+Where third-party content is included under separate license terms, those terms are credited where applicable and take precedence over this license solely with respect to the third-party content to which they apply.
+
+The configuration, scripting, systems, and technical integration authored by GRS are original works of the GRS Mod Team.
+
+This is a custom license issued under Section 3 of the Arma Reforger Workshop Terms of Use.
+
+--------------------------------------------------
+PERMANENTLY BANNED TEAMS & INDIVIDUALS
+--------------------------------------------------
+
+The following parties are permanently prohibited from downloading, installing, accessing, using, modifying, reskinning, redistributing, or otherwise interacting with GRS-created mods or any portion of their contents:
+
+- Armadudes
+- SHS Direct Team Members, AKA anyone who creates/develops SHS mods, or co-develops SHS mods. Especially Lucalis.
+
+This prohibition also extends to any individuals, alternate accounts, affiliated projects, collaborators, or organizations associated with them.
+
+This prohibition overrides all permissions granted elsewhere in this license.
+
+--------------------------------------------------
+GRANTED PERMISSION / WHAT YOU CAN DO
+--------------------------------------------------
+
+Subject to your continued compliance with this license, the GRS Mod Team grants you a limited, non-exclusive, non-transferable, non-sublicensable, and revocable license to download, install, and use this mod for non-commercial personal gameplay within Arma Reforger.
+
+YOU MAY:
+
+- Download, install, and use the official GRS mod within Arma Reforger for non-commercial personal gameplay.
+- Use the mod on non-monetized Arma Reforger servers, provided the server and its operators comply with this license.
+- Create and publish reskins that depend on the original official GRS mod, provided no original GRS assets are extracted, copied, repackaged, or redistributed.
+- Create modified prefabs, configurations, or compatible add-ons that reference GRS content through the official GRS mod as a dependency.
+- Call, reference, extend, inherit from, or otherwise interface with publicly exposed GRS classes, APIs, components, events, and supported extension points through a proper dependency.
+- Use screenshots or rendered visual references of GRS textures as references when creating your own reskins, provided you do not directly extract or copy the original texture files.
+- Contact the GRS Mod Team to request additional permissions, collaboration rights, or separate licensing.
+- To request permission, join the official GRS Discord at https://discord.gg/grs-mods and open a ticket. Permission is not granted unless you receive explicit approval from the GRS Mod Team through an authorized GRS representative.
+
+PERMISSION REQUESTS:
+
+Official GRS Discord: https://discord.gg/grs-mods
+
+If you want to do something not expressly allowed by this license, join the Discord and open a ticket to request permission before proceeding.
+
+YOU MUST:
+
+- Keep the original official GRS mod as a required dependency when creating allowed reskins, prefab edits, configurations, or compatible add-ons.
+- Give clear and visible credit to the GRS Mod Team in your Workshop description or documentation when publishing content that builds upon or depends upon GRS-created content.
+- Follow any separate third-party license terms that apply to third-party content included in a GRS release.
+
+YOU MAY NOT extract, redistribute, reupload, monetize, port, copy, or otherwise use GRS content except as expressly permitted above or elsewhere in this license.
+
+No ownership rights are transferred to you.
+
+Any rights not expressly granted by this license are reserved by the GRS Mod Team and the respective owners of third-party content.
+
+The detailed restrictions and conditions below control if there is any conflict or uncertainty regarding what is permitted.
+
+--------------------------------------------------
+TERMS OF USE / PROHIBITED USE
+--------------------------------------------------
+
+By downloading, installing, accessing, or using this mod, you agree to the following terms:
+
+1. NO COMMERCIAL USE
+
+You may not use this mod, its assets, systems, scripts, or any portion thereof in any commercial product, commercial project, paid service, or monetized server.
+
+Commercial licensing may be granted separately only through explicit written permission from the GRS Mod Team and, where applicable, the relevant third-party rights holders.
+
+
+2. NO DIRECT OR INDIRECT MONETIZATION
+
+You may not directly or indirectly monetize this mod or any of its content.
+
+Prohibited monetization includes, but is not limited to:
+
+- Paywalled downloads.
+- Paid Patreon, Ko-fi, Boosty, SubscribeStar, or similar membership tiers that gate access to this mod or features dependent upon it.
+- Donation-gated server features that require or depend upon this mod.
+- Sale of in-game items, equipment, services, ranks, perks, or access tied to this mod.
+- Paid Discord or community access tied to this mod.
+- Charging users for access to servers, events, features, or experiences specifically dependent upon GRS content.
+- Any other arrangement or scheme intended to derive revenue directly or indirectly from this mod or its content.
+
+
+3. ARMA REFORGER ONLY
+
+This mod and its contents are licensed solely for use within Arma Reforger.
+
+No permission is granted to port, convert, adapt, recompile, export, or otherwise use this content in any other game, game engine, software product, framework, application, or environment without prior written permission from the GRS Mod Team.
+
+Nothing in this section grants permission to use GRS content in another Bohemia Interactive product unless GRS expressly authorizes such use in writing.
+
+
+4. NO REDISTRIBUTION OR REUPLOAD
+
+You may not reupload, redistribute, mirror, repack, bundle, sublicense, or otherwise distribute any portion of this mod or its contents without explicit written permission from the GRS Mod Team.
+
+This includes uploading modified or unmodified copies of GRS content to the Arma Reforger Workshop or any other distribution platform.
+
+Creating a separate mod that depends upon an official GRS Workshop release is permitted only where allowed by this license.
+
+
+5. RESKINNING AND PREFAB EDITING
+
+You are permitted to create and publish reskins, configuration changes, or modified prefabs that reference or build upon GRS content, provided that all of the following conditions are met:
+
+- Your mod requires the original official GRS mod as a dependency and cannot function without it.
+- Your mod does not contain, redistribute, repackage, or reupload original GRS assets.
+- Clear and visible credit is given to the GRS Mod Team in your Workshop description or accompanying documentation.
+- Screenshots or other rendered references of textures may be used as visual references when creating original reskins.
+- Direct extraction, copying, exporting, or redistribution of GRS texture files is not permitted.
+- GRS models may not be extracted, reused, redistributed, converted, or included in another package.
+- Any third-party content incorporated into GRS releases remains subject to its applicable third-party license.
+
+Permission under this section does not grant ownership of any GRS content.
+
+
+6. NO UNAUTHORIZED EXTRACTION
+
+You may not extract, export, rip, decompile, decode, copy, recover, or otherwise obtain packaged GRS content from the distributed mod except where expressly permitted by this license or required by applicable law.
+
+This restriction includes, but is not limited to:
+
+- Models.
+- Textures.
+- Materials.
+- Audio.
+- Animations.
+- Source files.
+- Packaged configuration content.
+- Other GRS-created or GRS-distributed assets.
+
+The permissions granted in Section 5 do not authorize direct extraction of GRS content.
+
+
+7. SOURCE CODE, SCRIPTS, AND DERIVATIVE SYSTEMS
+
+You may not directly modify, redistribute, copy, repackage, or create unauthorized derivative versions of GRS-authored source code, scripts, systems, or technical implementations without prior written approval from the GRS Mod Team.
+
+This restriction applies only to GRS-authored content and does not apply to Bohemia Interactive's original Arma Reforger code, publicly available engine systems, or code owned by unrelated third parties.
+
+Mods that list the applicable GRS mod as a required dependency are permitted to use, call, reference, extend, or inherit from publicly exposed GRS classes, APIs, components, events, and supported extension points. This permission does not allow copying, extracting, modifying, or redistributing GRS-authored source code.
+
+However, this exception does not permit copying GRS source code into another project or redistributing modified versions of GRS-authored scripts.
+
+
+8. VIOLATIONS AND ENFORCEMENT
+
+Violations of this license may result in actions including, where appropriate:
+
+- Requests for removal or takedown of infringing content.
+- Revocation of permissions previously granted by GRS.
+- Blacklisting from GRS services, communities, support channels, or collaboration opportunities.
+- Reports to applicable hosting, Workshop, or distribution platforms.
+- Legal action where appropriate and legally available.
+
+Where applicable, GRS may report violations to Bohemia Interactive, Arma Reforger Workshop administrators, hosting providers, or other platform administrators. Such administrators may investigate reported violations and may take action available under their own terms, rules, policies, or enforcement procedures, including removal of Workshop content, suspension or restriction of accounts, or other platform-level action.
+
+
+9. OWNERSHIP AND RESPECT FOR ORIGINAL WORK
+
+All GRS-authored content remains the intellectual property of the GRS Mod Team or its respective GRS creator or rights holder.
+
+Third-party content remains the property of its respective owners and is governed by the license or agreement applicable to that content.
+
+No provision of this license should be interpreted as GRS claiming ownership of Bohemia Interactive content or third-party works that GRS does not own.
+
+Please respect the time, effort, engineering, artwork, and other work invested in GRS releases.
+
+
+10. PERMANENTLY BANNED TEAMS & INDIVIDUALS
+
+The following parties are permanently prohibited from downloading, installing, accessing, using, modifying, reskinning, redistributing, or otherwise interacting with this mod or any portion of its contents:
+
+- EasyMoney, FOG, KO2, or any community containing EasyMoney as a player/owner/moderator
+- Armadudes
+- SHS or any SHS Affiliate/Team Member/Partner Server/Pet Hamster
+
+This prohibition extends to any individuals, alternate accounts, affiliated projects, collaborators, or organizations associated with them.
+
+This prohibition extends to all GRS-created mods and other releases citing the GRS Mod License.
+
+This prohibition overrides any other permission granted elsewhere in this license, including the permissions granted under the "GRANTED PERMISSION / WHAT YOU CAN DO" section and Section 5.
+
+GRS may separately grant written permission to an otherwise prohibited party at its sole discretion.
+
+
+--------------------------------------------------
+DISCLAIMER OF WARRANTY
+--------------------------------------------------
+
+This mod is provided "as is" and "as available" without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, title, and non-infringement.
+
+The GRS Mod Team makes no representation or warranty regarding the suitability, reliability, compatibility, availability, accuracy, performance, or completeness of the mod for any particular purpose.
+
+
+--------------------------------------------------
+LIMITATION OF LIABILITY
+--------------------------------------------------
+
+To the maximum extent permitted by applicable law, in no event shall the GRS Mod Team, its members, contributors, or associated creators be liable for any direct, indirect, incidental, special, consequential, exemplary, or punitive damages arising out of or relating to the use of, inability to use, installation of, or reliance upon this mod.
+
+This includes, but is not limited to, damages arising from:
+
+- Data loss.
+- Server downtime.
+- Save-game corruption.
+- Mod conflicts.
+- Software instability.
+- Hardware issues.
+- Loss of access.
+- Lost profits or revenue.
+
+This limitation applies even if the GRS Mod Team has been advised of the possibility of such damages.
+
+
+--------------------------------------------------
+BOHEMIA INTERACTIVE DISCLAIMER
+--------------------------------------------------
+
+Arma Reforger, the Enfusion engine, and related Bohemia Interactive intellectual property are the property of Bohemia Interactive a.s. and/or their respective rights holders.
+
+This mod is an unofficial, fan-made addition to Arma Reforger and is not affiliated with, endorsed by, sponsored by, or otherwise associated with Bohemia Interactive a.s.
+
+Nothing in this license grants rights to Bohemia Interactive intellectual property beyond the rights otherwise provided by Bohemia Interactive's applicable agreements and terms.
+
+
+--------------------------------------------------
+SEVERABILITY
+--------------------------------------------------
+
+If any provision of this license is held to be invalid, illegal, or unenforceable under applicable law, that provision shall be interpreted or limited to the minimum extent necessary where legally permissible.
+
+The invalidity or unenforceability of one provision shall not affect the validity or enforceability of the remaining provisions, which shall remain in full force and effect.
+
+
+--------------------------------------------------
+NO WAIVER
+--------------------------------------------------
+
+Failure by the GRS Mod Team to enforce any provision of this license in a particular instance does not constitute a waiver of that provision or of the right to enforce it in the future.
+
+
+--------------------------------------------------
+VERSIONING
+--------------------------------------------------
+
+This license may be revised from time to time.
+
+Future versions will be issued under an incremented version number, such as v1.2 or v2.0.
+
+The version applicable to a specific release of a GRS mod is the version identified in the license.txt file distributed with or expressly cited by that release.
+
+Unless otherwise stated in writing, publishing a newer version of this license does not retroactively replace the license version attached to an earlier release.
+
+Continued use of a particular release remains governed by the license version applicable to that release.
+
+
+--------------------------------------------------
+PERMISSIONS AND LICENSING INQUIRIES
+--------------------------------------------------
+
+For permissions, collaboration, commercial licensing, or other licensing inquiries, contact the GRS Mod Team through the official GRS Discord:
+
+https://discord.gg/grs-mods

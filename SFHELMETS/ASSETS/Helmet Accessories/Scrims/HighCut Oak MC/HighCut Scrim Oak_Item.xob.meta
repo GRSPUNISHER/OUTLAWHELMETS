@@ -8,6 +8,10 @@ MetaFileClass {
      AssignedMaterial "{196FD2400B7A8FE8}ASSETS/Helmet Accessories/Scrims/Data/High_Cut_Helmet_Scrim_Oak.emat"
     }
    }
+   MeshParams {
+    MeshParam "High_Cut_Helmet_Scrim_Oak.001" {
+    }
+   }
    GeometryParams {
     GeometryParam UCX_Item {
      LayerPreset "ItemFireView"
@@ -20,6 +24,9 @@ MetaFileClass {
    }
    Common TXOCommonClass "{45CEC64793B66B81}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{2AA1BB37FE90D337}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -40,6 +47,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{BB90E1FB909110E7}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }

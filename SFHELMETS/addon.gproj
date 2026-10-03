@@ -1,9 +1,9 @@
 GameProject {
  ID "SFHELMETS"
  GUID "697C1B4763225DB8"
- TITLE "SFHELMETS"
+ TITLE "OUTLAW Helmets"
  Dependencies {
-  "58D0FB3206B6F859" "6A2A460F6FE4B59A"
+  "58D0FB3206B6F859"
  }
  Configurations {
   GameProjectConfig PC {
@@ -17,6 +17,8 @@ GameProject {
   GameProjectConfig PS5 {
   }
   GameProjectConfig HEADLESS {
+  }
+  GameProjectConfig Xbox {
   }
  }
 }

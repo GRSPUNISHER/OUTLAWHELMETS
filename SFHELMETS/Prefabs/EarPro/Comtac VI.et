@@ -2,10 +2,11 @@ GenericEntity {
  ID "5DB5F4ADE578878F"
  components {
   ParametricMaterialInstanceComponent "{42FAC8EB7A3D37ED}" {
+   UserParamAlpha 0
   }
   Persistence "{C13DEAE30F385F56}" {
   }
-  GRS_FirstPersonHideComponent "{55D0451A451D38CD}" {
+  OUTLAW_FirstPersonHideComponent "{55D0451A451D38CD}" {
   }
   InventoryItemComponent "{625F53AE767B0E32}" {
    Attributes SCR_ItemAttributeCollection "{5BD6A825A446BA9D}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{4CAA19C8A7A7B535}" {
-   AreaType GRS_Helmet_EarPro "{E8D2571C2FE8AF87}" {
+   AreaType OUTLAW_Helmet_EarPro "{E8D2571C2FE8AF87}" {
    }
    WornModel "{85CDD23F2B2DA75B}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/comtacvi.xob"
    ItemModel "{09E5B31D7B270361}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/comtacvi_Item.xob"

@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{1B10E2A8BD2ACA72}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/Data/PVS31_BRS_Coyote_BCR.edds"
+ NMOMap "{8BBE2301AB5B8EA4}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/Data/PVS31_BRS_Coyote_NMO.edds"
+}

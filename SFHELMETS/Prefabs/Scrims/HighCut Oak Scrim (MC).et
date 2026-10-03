@@ -2,10 +2,11 @@ GenericEntity {
  ID "6A2F76AEA0CA7D10"
  components {
   ParametricMaterialInstanceComponent "{6A2F76AEA0CA7DE6}" {
+   UserParamAlpha 0
   }
   Persistence "{6A2F76AEA0CA7DFA}" {
   }
-  GRS_FirstPersonHideComponent "{6A2F76AEA0CA7DC5}" {
+  OUTLAW_FirstPersonHideComponent "{6A2F76AEA0CA7DC5}" {
   }
   InventoryItemComponent "{6A2F76AEA0CA7DC6}" {
    Attributes SCR_ItemAttributeCollection "{F2175676FB47278F}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{6A2F76AEA0CA7DAB}" {
-   AreaType GRS_Helmet_Scrim "{F8E5DC7B69E5C257}" {
+   AreaType OUTLAW_Helmet_Scrim "{F8E5DC7B69E5C257}" {
    }
    WornModel "{A38A7FC91BE0AD86}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak.xob"
    ItemModel "{31A96BA22058A9B5}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/HighCut Scrim Oak_Item.xob"

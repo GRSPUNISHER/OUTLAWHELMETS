@@ -2,10 +2,11 @@ GenericEntity {
  ID "6A2F7249F3811C2D"
  components {
   ParametricMaterialInstanceComponent "{6A2F7249F3811C36}" {
+   UserParamAlpha 0
   }
   Persistence "{6A2F7249F3811C3A}" {
   }
-  GRS_FirstPersonHideComponent "{6A2F7249F3811C04}" {
+  OUTLAW_FirstPersonHideComponent "{6A2F7249F3811C04}" {
   }
   InventoryItemComponent "{6A2F7249F3811C05}" {
    Attributes SCR_ItemAttributeCollection "{E796B463075B980D}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{6A2F7249F3811C1C}" {
-   AreaType GRS_Helmet_EarPro "{7CDBCC0568345831}" {
+   AreaType OUTLAW_Helmet_EarPro "{7CDBCC0568345831}" {
    }
    WornModel "{23C5DAFD00F41B58}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap.xob"
    ItemModel "{2B94DA340A86F5A7}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/comtacviinostrap_Item.xob"

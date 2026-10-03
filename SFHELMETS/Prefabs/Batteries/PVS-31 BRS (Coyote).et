@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "00A81DDA9CDF7A06"
+ components {
+  ParametricMaterialInstanceComponent "{AE13450049E522FB}" {
+   UserParamAlpha 0
+  }
+  Persistence "{346A66BC84DAE686}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{675FD3508DB88F33}" {
+  }
+  InventoryItemComponent "{D3C39FA382C681BB}" {
+   Attributes SCR_ItemAttributeCollection "{F01387B3640C76AB}" {
+    ItemDisplayName UIInfo "{FE6B43F038037A13}" {
+     Name "PVS-31 BRS (Coyote)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{E7E1A761AD02C4A5}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{DE4CC057FA44DA31}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{4144D3989D339385}" {
+   Object "{1A6A776B0E50F0FA}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/batterypack_Item.xob"
+  }
+  RigidBody "{29603F677E11DEAB}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{B0248E21CCA58CF2}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{833D3563AB3703E1}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{15FFB29C49CD5DF4}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{E99EDE03B7BDA76E}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{112A732C415A00B0}" {
+   AreaType OUTLAW_Helmet_BRS "{1AE323F79160AF70}" {
+   }
+   WornModel "{5559E5E49B787310}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/batterypack.xob"
+   ItemModel "{1A6A776B0E50F0FA}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/batterypack_Item.xob"
+  }
+  ActionsManagerComponent "{D20CE93412EDA684}" {
+   ActionContexts {
+    UserActionContext "{430B8FFFAC0BE834}" {
+     UIInfo SCR_ActionContextUIInfo "{CE31D8F0FB1794B7}" {
+     }
+     ContextName "default"
+     Position PointInfo "{CF123E9F182F2EA7}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{3E1230BD187A8127}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{AB12EBB43CDFA1C2}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{649FE2AAD11D3139}" {
+  }
+  RplComponent "{5B6839E594A5AC87}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{45DB1D1376924890}" {
+  }
+ }
+}

@@ -1,0 +1,62 @@
+MetaFileClass {
+ Name "{1F11F9EAF18662D5}ASSETS/XP/XP Tan/XPC4_Item.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{503F1CFC66BD81B2}" {
+     SourceMaterial "Carbon1"
+     AssignedMaterial "{EE3C078765CF7822}ASSETS/XP/XP Tan/Data/XP_Carbon1.emat"
+    }
+    MaterialAssignClass "{60E689C8899780BA}" {
+     SourceMaterial "XP1"
+     AssignedMaterial "{B3FA18D4572C030B}ASSETS/XP/XP Tan/Data/XP_XP1H4.emat"
+    }
+    MaterialAssignClass "{09F8BD8A02B57864}" {
+     SourceMaterial "XP4M"
+     AssignedMaterial "{F95AE9A9388EAB45}ASSETS/XP/XP Tan/Data/XP_XP4M.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XPC4_Shell {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Item {
+     LayerPreset "ItemFireView"
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{E92FCEC261433C76}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{9E4B955C927B7848}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{2212A7F947CAC918}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{B86B0F8380E7460C}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{5543B3E770EB0BAB}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{96AE46CBE4030C1A}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

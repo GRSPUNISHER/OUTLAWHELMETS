@@ -1,0 +1,36 @@
+MetaFileClass {
+ Name "{E0AAC795EDBCBB82}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/Maritime/shawbrainpouch_Maritime.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{7A59EDFE07264304}" {
+     SourceMaterial "ShawBrain"
+     AssignedMaterial "{D1FD7DF502C51536}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/Data/ShawBrain.emat"
+    }
+   }
+   Common TXOCommonClass "{A836647D3AE5B39E}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{E755CF3FA72A3531}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{6C8A49BFD7954BB4}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{3A2054EB4DAF5F46}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{A903454F65848340}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{DCA1FF25E6DCF347}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

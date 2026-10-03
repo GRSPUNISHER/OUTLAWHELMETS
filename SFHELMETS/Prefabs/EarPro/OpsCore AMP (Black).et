@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "F7DB6482D568D538"
+ components {
+  ParametricMaterialInstanceComponent "{EE5D009B5F1E4F74}" {
+   UserParamAlpha 0
+  }
+  Persistence "{0DCDA2CE6835B825}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{7BF71E483C28CB60}" {
+  }
+  InventoryItemComponent "{9D90FCC334949774}" {
+   Attributes SCR_ItemAttributeCollection "{61D1430542CC6741}" {
+    ItemDisplayName UIInfo "{0DB50418891D0627}" {
+     Name "Ops-Core AMP (Black)"
+     Description "Ear Pro"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{83FF88A44A6223DB}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{61C91DD3A2E5DAAE}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{4D38ED59D9AB03A7}" {
+   Object "{DB04A1F050A6B497}ASSETS/Helmet Accessories/AMP/BLACK AMP/OpsCore_AMP_Item.xob"
+  }
+  RigidBody "{41BB9B853C1931FE}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{97E4AF03301BC5EB}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{E9694E1DF318A4D7}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{1F83D2E42025B185}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{AA746392DBD1C400}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{9B9C7C3F7A1109A8}" {
+   AreaType OUTLAW_Helmet_EarPro "{41499CF4A454572C}" {
+   }
+   WornModel "{AF4DC2CF61730975}ASSETS/Helmet Accessories/AMP/BLACK AMP/OpsCore_AMP.xob"
+   ItemModel "{DB04A1F050A6B497}ASSETS/Helmet Accessories/AMP/BLACK AMP/OpsCore_AMP_Item.xob"
+  }
+  ActionsManagerComponent "{3A4EC7F7B9003BEA}" {
+   ActionContexts {
+    UserActionContext "{C99CBCB809B652F9}" {
+     UIInfo SCR_ActionContextUIInfo "{0AEC82C53CCD4F95}" {
+     }
+     ContextName "default"
+     Position PointInfo "{6DCE98733E678015}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{15793E5A453E1D44}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{930380106A2D4688}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{164C112BF85B0BCC}" {
+  }
+  RplComponent "{3ED6B36BA6BB63AA}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{9A0715C8DD73602F}" {
+  }
+ }
+}

@@ -1,5 +1,9 @@
 """Place the exported FBXs into SFHELMETS and write every Workbench resource for the modular SF V2 helmets.
 
+SUPERSEDED 2026-09-30 for helmet PREFABS: helmets are now one core + interchangeable shell per family, written by
+gen_shells.py. Rerunning this script's helmet section brings back the old per-colour one-piece helmets.
+
+
   python _tools/gen_sf.py        (after build_sf.py and pack_textures.py)
 
 Helmet = shell (Bump = vendor "Carbon", Ballistic = vendor "SF"; carries the UTM_Helmet hit zone) + prefilled
@@ -114,7 +118,7 @@ def edds_meta(rel):
     kind = "NMO" if rel.endswith("_NMO.edds") else "BCR"
     m = ['MetaFileClass {', f' Name "{ref(rel)}"', ' Configurations {']
     for p in ("PC",) + PLATFORMS:
-        m += [f'  PNGResourceClass {p} : "{TEX[kind][p]}" {{', '  }']
+        m += [f'  PNGResourceClass {p} : "{TEX[kind][p]}" {{', '   MaxSize "2048"', '  }']
     m += [' }', '}', '']
     write(rel + ".meta", "\n".join(m))
 
@@ -158,13 +162,23 @@ PF = "Prefabs/Helmets/SF V2 Helmets/"
 BASE = PF + "SF_Helmet_AOR1 (base dont touch).et"
 BASE_REF = "{AF457DB4423C4107}" + BASE
 
+# The Ballistic has its OWN textures (install_ballistic_textures.py: the user's MCB HELMET.spp stack applied in Painter);
+# the Bump's SF.emat / SF_*_BCR/NMO are the user's finished Bump textures and are never written.
+BALLISTIC_PREFIX = {"HELMET AOR1": "AOR1SF", "HELMET BLACK": "mcbSF", "HELMET GREEN": "grSF", "HELMET MC": "SF",
+                    "HELMET RG": "RGSF", "HELMET TAN": "tanSF"}
+
 xobs = {}
 for code, folder, _ in COLOURS:
     sf_emat = meta_name(f"ASSETS/{folder}/Data/SF.emat")
     mats = [("SF", sf_emat)]
+    d = f"ASSETS/{folder}/Data/"
+    bal_bcr, bal_nmo = d + BALLISTIC_PREFIX[folder] + "Ballistic_BCR.edds", d + BALLISTIC_PREFIX[folder] + "Ballistic_NMO.edds"
+    edds_meta(bal_bcr); edds_meta(bal_nmo)
+    emat(d + "SFBallistic.emat", bal_bcr, bal_nmo)
+    bal_mats = [("SF", ref(d + "SFBallistic.emat"))]
     xobs[code] = {
         "Bump": place("SF_Bump", f"ASSETS/{folder}/SF V2 Bump.fbx", mats, GM_BUMP),
-        "Ballistic": place("SF_Ballistic", f"ASSETS/{folder}/SF V2 Ballistic.fbx", mats, GM_BALLISTIC),
+        "Ballistic": place("SF_Ballistic", f"ASSETS/{folder}/SF V2 Ballistic.fbx", bal_mats, GM_BALLISTIC),
         "Rails": place("SF_Rails", f"ASSETS/{folder}/SF V2 Rails.fbx", mats),
     }
     for old in glob.glob(ADDON + f"ASSETS/{folder}/SF V2 Bump (Rigged).*"):
@@ -190,14 +204,14 @@ for part, entries in EXISTING_ACC.items():
 # new: part -> (folder, fbx stem, source material, texture stem, prefab, name, area)
 NEW_ACC = {
     "OpsCore_AMP": ("AMP", "OpsCore_AMP", "MI_Ops_Core_AMP_Headset", "OpsCore_AMP", "Prefabs/EarPro/OpsCore AMP.et",
-                    "Ops-Core AMP", "Ear Pro", "GRS_Helmet_EarPro"),
+                    "Ops-Core AMP", "Ear Pro", "OUTLAW_Helmet_EarPro"),
     "SM_Comtac_6_ARC": ("COMTACS/COMTAC VI", "comtacvi", "MI_Comtac_6", "Comtac6", "Prefabs/EarPro/Comtac VI.et",
-                        "Comtac VI", "Ear Pro", "GRS_Helmet_EarPro"),
+                        "Comtac VI", "Ear Pro", "OUTLAW_Helmet_EarPro"),
     "NVG_Counterweight_OpsCore_Kit": ("COUNTERWEIGHT", "counterweight", "MI_NVG_Counterweight_OpsCore_Kit_Coyote",
                                       "OpsCoreCounterweight_Coyote", "Prefabs/Batteries/OpsCore Counterweight (Coyote).et",
-                                      "Ops-Core Counterweight (Coyote)", "Helmet Attachment", "GRS_Helmet_Battery"),
+                                      "Ops-Core Counterweight (Coyote)", "Helmet Attachment", "OUTLAW_Helmet_Counterweight"),
     "BNVDFBat": ("BNVD BATTERY", "bnvdbattery", "BNVDFBat", "BNVDFBat", "Prefabs/Batteries/BNVD Battery Pack.et",
-                 "BNVD Battery Pack", "Helmet Attachment", "GRS_Helmet_Battery"),
+                 "BNVD Battery Pack", "Helmet Attachment", "OUTLAW_Helmet_Battery"),
 }
 for part, (folder, stem, srcmat, tex, prefab, *_rest) in NEW_ACC.items():
     d = f"{ACC}{folder}/Data/"
@@ -208,10 +222,11 @@ for part, (folder, stem, srcmat, tex, prefab, *_rest) in NEW_ACC.items():
     acc_models[prefab] = place(part, f"{ACC}{folder}/{stem}.fbx", [(srcmat, ref(em))])
 
 # ================================================================ slot type
-sc = read("Scripts/Game/GRS_Helmet_LoadoutAreas.c")
-if "GRS_Helmet_Rails" not in sc:
-    sc = sc.rstrip() + "\n\n// Helmet rails (removable part of the modular SF V2 helmets)\nclass GRS_Helmet_Rails: LoadoutAreaType{};\n"
-    write("Scripts/Game/GRS_Helmet_LoadoutAreas.c", sc)
+sc = read("Scripts/Game/OUTLAW_Helmet_LoadoutAreas.c")
+for _a in ("OUTLAW_Helmet_Rails", "OUTLAW_Helmet_BRS", "OUTLAW_Helmet_Counterweight"):
+    if f"class {_a}:" not in sc:
+        sc = sc.rstrip() + f"\n\nclass {_a}: LoadoutAreaType{{}};\n"
+write("Scripts/Game/OUTLAW_Helmet_LoadoutAreas.c", sc)
 
 # ================================================================ accessory prefabs
 SND_PICK = "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
@@ -231,11 +246,12 @@ def accessory_prefab(rel, name, desc, area, worn, item, entity_id=None, fp_hide=
     c = lambda n: "{%s}" % (old.get(n) or guid(k + n))
     n = lambda n: "{%s}" % guid(k + n)
     eid = entity_id or (re.search(r'ID "([0-9A-F]{16})"', read(rel)).group(1) if os.path.exists(ADDON + rel) else guid("id:" + rel))
-    fp = f'  GRS_FirstPersonHideComponent "{c("GRS_FirstPersonHideComponent")}" {{\n  }}\n' if fp_hide else ""
+    fp = f'  OUTLAW_FirstPersonHideComponent "{c("OUTLAW_FirstPersonHideComponent")}" {{\n  }}\n' if fp_hide else ""
     t = f'''GenericEntity {{
  ID "{eid}"
  components {{
   ParametricMaterialInstanceComponent "{c("ParametricMaterialInstanceComponent")}" {{
+   UserParamAlpha 0
   }}
   Persistence "{c("Persistence")}" {{
   }}
@@ -331,13 +347,13 @@ def accessory_prefab(rel, name, desc, area, worn, item, entity_id=None, fp_hide=
 
 
 ACC_INFO = {
-    "Prefabs/Batteries/PVS-31 BRS (MC).et": ("PVS-31 BRS (MC)", "Helmet Attachment", "GRS_Helmet_Battery"),
-    "Prefabs/EarPro/Comtacs (RG).et": ("Comtac VII (RG)", "Ear Pro", "GRS_Helmet_EarPro"),
-    "Prefabs/EarPro/Comtacs (Tan).et": ("Comtac VII (Tan)", "Ear Pro", "GRS_Helmet_EarPro"),
-    "Prefabs/Scrims/HighCut Oak Scrim (MC).et": ("HighCut Oak Scrim (MC)", "Helmet Attachment", "GRS_Helmet_Scrim"),
-    "Prefabs/Scrims/HighCut Oak Scrim (RG).et": ("HighCut Oak Scrim (RG)", "Helmet Attachment", "GRS_Helmet_Scrim"),
-    "Prefabs/Scrims/HighCut SemiCircle Scrim (MC).et": ("HighCut SemiCircle Scrim (MC)", "Helmet Attachment", "GRS_Helmet_Scrim"),
-    "Prefabs/Scrims/HighCut SemiCircle Scrim (RG).et": ("HighCut SemiCircle Scrim (RG)", "Helmet Attachment", "GRS_Helmet_Scrim"),
+    "Prefabs/Batteries/PVS-31 BRS (MC).et": ("PVS-31 BRS (MC)", "Helmet Attachment", "OUTLAW_Helmet_BRS"),
+    "Prefabs/EarPro/Comtacs (RG).et": ("Comtac VII (RG)", "Ear Pro", "OUTLAW_Helmet_EarPro"),
+    "Prefabs/EarPro/Comtacs (Tan).et": ("Comtac VII (Tan)", "Ear Pro", "OUTLAW_Helmet_EarPro"),
+    "Prefabs/Scrims/HighCut Oak Scrim (MC).et": ("HighCut Oak Scrim (MC)", "Helmet Attachment", "OUTLAW_Helmet_Scrim"),
+    "Prefabs/Scrims/HighCut Oak Scrim (RG).et": ("HighCut Oak Scrim (RG)", "Helmet Attachment", "OUTLAW_Helmet_Scrim"),
+    "Prefabs/Scrims/HighCut SemiCircle Scrim (MC).et": ("HighCut SemiCircle Scrim (MC)", "Helmet Attachment", "OUTLAW_Helmet_Scrim"),
+    "Prefabs/Scrims/HighCut SemiCircle Scrim (RG).et": ("HighCut SemiCircle Scrim (RG)", "Helmet Attachment", "OUTLAW_Helmet_Scrim"),
 }
 for part, (folder, stem, srcmat, tex, prefab, name, desc, area) in NEW_ACC.items():
     ACC_INFO[prefab] = (name, desc, area)
@@ -348,21 +364,21 @@ for prefab, (name, desc, area) in ACC_INFO.items():
 for col in ("MC", "RG"):
     p = f"Prefabs/Battery Pouches/ShawBrainPouch ({col}).et"
     xob = re.search(r'Object "\{[0-9A-F]{16}\}([^"]+)"', read(p)).group(1)
-    accessory_prefab(p, f"ShawBrain Pouch ({col})", "Helmet Attachment", "GRS_Helmet_Battery", xob, xob)
+    accessory_prefab(p, f"ShawBrain Pouch ({col})", "Helmet Attachment", "OUTLAW_Helmet_Battery", xob, xob)
 
 # ================================================================ rails prefabs
 rails_prefab = {}
 for code, folder, pretty in COLOURS:
     p = f"{PF}Rails/SF_Rails_{code}.et"
     accessory_prefab(p, f"SF V2 ARC Rails ({pretty})", "Removable ARC rails for the SF V2 Bump / Ballistic helmets.",
-                     "GRS_Helmet_Rails", *xobs[code]["Rails"])
+                     "OUTLAW_Helmet_Rails", *xobs[code]["Rails"])
     rails_prefab[code] = p
 
 # ================================================================ helmet prefabs
 base = read(BASE)
 worn, item = xobs["AOR1"]["Bump"]
 base = re.sub(r'(ClothNodeStorageComponent[\s\S]*?Name )"[^"]*"(\s*Description )"[^"]*"',
-              r'\1"SF V2 Bump (AOR1)"\2"Modular SF V2 Bump helmet. Removable rails, ear pro, rear battery, scrim, NVG, light and strobe slots."',
+              r'\1"SF V2 Bump (AOR1)"\2"Modular SF V2 Bump helmet. Removable rails, ear pro, BRS, battery, counterweight, scrim, NVG, light and strobe slots."',
               base, count=1)
 base = re.sub(r'(InventoryItemComponent[\s\S]*?Name )"[^"]*"', r'\1"SF V2 Bump (AOR1)"', base, count=1)
 base = re.sub(r'(MeshObject "\{[0-9A-F]{16}\}" \{\s*Object )"[^"]*"', r'\1"%s"' % ref(item), base, count=1)
@@ -371,10 +387,16 @@ base = re.sub(r'ItemModel "[^"]*"', 'ItemModel "%s"' % ref(item), base)
 base = base.replace('"UTM_Helmet_PASGT_01"', '"UTM_Helmet"')
 if "LoadoutSlotInfo Rails" not in base:
     rails_slot = (f'    LoadoutSlotInfo Rails {{\n     Prefab "{ref(rails_prefab["AOR1"])}"\n     InheritParentSkeleton 1\n'
-                  f'     AreaType GRS_Helmet_Rails "{{{guid("c:base:area_rails")}}}" {{\n     }}\n    }}\n')
+                  f'     AreaType OUTLAW_Helmet_Rails "{{{guid("c:base:area_rails")}}}" {{\n     }}\n    }}\n')
     base = base.replace("   Slots {\n", "   Slots {\n" + rails_slot, 1)
 else:
     base = re.sub(r'(LoadoutSlotInfo Rails \{\s*Prefab )"[^"]*"', r'\1"%s"' % ref(rails_prefab["AOR1"]), base)
+if "LoadoutSlotInfo BRS" not in base:
+    _m = re.search(r"    LoadoutSlotInfo Battery \{\n(?:     .*\n)*?    \}\n", base)
+    base = base[:_m.end()] + "".join(
+        f'    LoadoutSlotInfo {n} {{\n     InheritParentSkeleton 1\n'
+        f'     AreaType {a} "{{{guid("c:base:area_" + n.lower())}}}" {{\n     }}\n    }}\n'
+        for n, a in (("BRS", "OUTLAW_Helmet_BRS"), ("Counterweight", "OUTLAW_Helmet_Counterweight"))) + base[_m.end():]
 if "ShowAllChildrens" not in base:
     base = base.replace("      FOV 65\n", "      FOV 65\n      ShowAllChildrens 1\n", 1)
 write(BASE, base)

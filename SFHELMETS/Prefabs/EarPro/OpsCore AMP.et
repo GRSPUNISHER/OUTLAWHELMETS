@@ -2,10 +2,11 @@ GenericEntity {
  ID "7B69A044486A510A"
  components {
   ParametricMaterialInstanceComponent "{47BDAE5CB7ED74AF}" {
+   UserParamAlpha 0
   }
   Persistence "{D15F6910B1B551F9}" {
   }
-  GRS_FirstPersonHideComponent "{4E71C8906BB58CDC}" {
+  OUTLAW_FirstPersonHideComponent "{4E71C8906BB58CDC}" {
   }
   InventoryItemComponent "{6D16F48F01406DFF}" {
    Attributes SCR_ItemAttributeCollection "{087542263EACBFE2}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{AEECD51A9B2C07AC}" {
-   AreaType GRS_Helmet_EarPro "{F1156A60BC55013D}" {
+   AreaType OUTLAW_Helmet_EarPro "{F1156A60BC55013D}" {
    }
    WornModel "{895246DE10C64BDE}ASSETS/Helmet Accessories/AMP/OpsCore_AMP.xob"
    ItemModel "{A10B649C875F5078}ASSETS/Helmet Accessories/AMP/OpsCore_AMP_Item.xob"

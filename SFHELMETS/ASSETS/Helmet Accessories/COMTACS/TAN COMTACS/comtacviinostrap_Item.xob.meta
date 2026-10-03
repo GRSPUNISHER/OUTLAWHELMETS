@@ -5,7 +5,11 @@ MetaFileClass {
    MaterialAssigns {
     MaterialAssignClass "{9C84EA15FC968799}" {
      SourceMaterial "MI_PeltorComtac_VII_Grey"
-     AssignedMaterial "{47D913D227AF1278}ASSETS/Helmet Accessories/COMTACS/MC COMTACS/Data/MI_PeltorComtac_VII_Grey.emat"
+     AssignedMaterial "{47D913D227AF1278}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/Data/MI_PeltorComtac_VII_Grey.emat"
+    }
+   }
+   MeshParams {
+    MeshParam "SM_PeltorComtac_VII_ARC.001" {
     }
    }
    GeometryParams {
@@ -20,6 +24,9 @@ MetaFileClass {
    }
    Common TXOCommonClass "{87C16FD99D5DFC01}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{D30323216EB05F80}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -40,6 +47,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{0AF460A072D28B2D}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }

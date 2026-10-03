@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "9AC135F2362B323F"
+ components {
+  ParametricMaterialInstanceComponent "{84933174F8E3304D}" {
+   UserParamAlpha 0
+  }
+  Persistence "{93EC2EA223E3A501}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{A7B8B16B813205DA}" {
+  }
+  InventoryItemComponent "{C4967B804B862303}" {
+   Attributes SCR_ItemAttributeCollection "{C63FF778EE9A6426}" {
+    ItemDisplayName UIInfo "{D595E016DFF66C82}" {
+     Name "HighCut Oak Scrim (MC) (XP)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{14F01908730C3693}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{152342559F738AF3}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{F2931C8A08BE18A2}" {
+   Object "{4593F40F550D318C}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/XP/HighCut Scrim Oak_XP_Item.xob"
+  }
+  RigidBody "{AA1C94D2A430EB17}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{19F811935428ADAF}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{E55FB9CE565F0A39}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{A3020B95E5B5F605}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{7DBE0B2A1B925C48}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{D2BA6F7FF95B6445}" {
+   AreaType OUTLAW_Helmet_XPScrim "{D4786EA543BD60D7}" {
+   }
+   WornModel "{ACA03A979D69B84A}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/XP/HighCut Scrim Oak_XP.xob"
+   ItemModel "{4593F40F550D318C}ASSETS/Helmet Accessories/Scrims/HighCut Oak MC/XP/HighCut Scrim Oak_XP_Item.xob"
+  }
+  ActionsManagerComponent "{6F8DB8EF051BAA2A}" {
+   ActionContexts {
+    UserActionContext "{0212C7918746F071}" {
+     UIInfo SCR_ActionContextUIInfo "{7ED14537891E789C}" {
+     }
+     ContextName "default"
+     Position PointInfo "{17DEF7F966E36CA3}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{5340869559421859}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{6F5B209AC351DBC8}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{1F63BF0241BB0983}" {
+  }
+  RplComponent "{B8DAD191536BFF7F}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{09BC3B045003B9C8}" {
+  }
+ }
+}

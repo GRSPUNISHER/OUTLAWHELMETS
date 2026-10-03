@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "B468ACBFA8E6418C"
+ components {
+  ParametricMaterialInstanceComponent "{96434144660F961C}" {
+   UserParamAlpha 0
+  }
+  Persistence "{587F69EBA5AE9796}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{3F788BEE1DA067DA}" {
+  }
+  InventoryItemComponent "{628EA37D9C8D5AC2}" {
+   Attributes SCR_ItemAttributeCollection "{AB8EBCE361A0819C}" {
+    ItemDisplayName UIInfo "{48CBA5EAE9A66F09}" {
+     Name "Comtac VI (Maritime)"
+     Description "Ear Pro"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{E2E7185040B650F0}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{A51F7BF067FBABEB}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{CE8F9DC338B0F1F9}" {
+   Object "{09E5B31D7B270361}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/comtacvi_Item.xob"
+  }
+  RigidBody "{815F6FF9EA8769EB}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{2009822C3621528A}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{BDBE0661D71A8AF2}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{6D45220FF5B24975}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{E3279E9D24C6290C}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{D5394661B9CF0558}" {
+   AreaType OUTLAW_Helmet_MaritimeEarPro "{2C02FA2BF2E36C0D}" {
+   }
+   WornModel "{85CDD23F2B2DA75B}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/comtacvi.xob"
+   ItemModel "{09E5B31D7B270361}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/comtacvi_Item.xob"
+  }
+  ActionsManagerComponent "{DF7A22E017161004}" {
+   ActionContexts {
+    UserActionContext "{CB9CFB0718527A74}" {
+     UIInfo SCR_ActionContextUIInfo "{D12FD6416FCE4EF8}" {
+     }
+     ContextName "default"
+     Position PointInfo "{8B79CFD6890F206E}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{520C9DE1C1A097AC}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{2396A6EA2A3B8F9D}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{6D03ACBDE0010896}" {
+  }
+  RplComponent "{581F84E4798CC5C4}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{8B69D979F9D8ED22}" {
+  }
+ }
+}

@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{13696CC9DB03CBD9}ASSETS/MARITIME/MARITIME RG/Data/RGMaritimeMT_BCR.edds"
+ NMOMap "{37C51956AADF4256}ASSETS/MARITIME/MARITIME RG/Data/RGMaritimeMT_NMO.edds"
+}

@@ -1,0 +1,45 @@
+MetaFileClass {
+ Name "{99E292FC91029132}ASSETS/Helmet Accessories/COMTACS/GREEN COMTACS/XP/comtacviinostrap_XP.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{287BE73AB28020FD}" {
+     SourceMaterial "MI_PeltorComtac_VII_Grey"
+     AssignedMaterial "{557BDEEEF0C24C7A}ASSETS/Helmet Accessories/COMTACS/GREEN COMTACS/Data/MI_PeltorComtac_VII_Grey.emat"
+    }
+   }
+   MeshParams {
+    MeshParam XP_Comtac7 {
+    }
+   }
+   Common TXOCommonClass "{0889A62D6D7293A2}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5B75B082E43CFE07}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{0DC3B5051485B188}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{00771246C91442C6}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{68A44FE1C5DCF4C4}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{C0564B5475AE4344}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

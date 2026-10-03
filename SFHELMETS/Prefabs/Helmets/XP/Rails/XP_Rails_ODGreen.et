@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "B946B6AD71A0E635"
+ components {
+  ParametricMaterialInstanceComponent "{5F21CB655675EF46}" {
+   UserParamAlpha 0
+  }
+  Persistence "{49EDA912FAE778A3}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{33D536C766317B18}" {
+  }
+  InventoryItemComponent "{5BFA3A7D5804FACD}" {
+   Attributes SCR_ItemAttributeCollection "{C1A7E1532B31DAF0}" {
+    ItemDisplayName UIInfo "{CBCFF4EF0B9EDF66}" {
+     Name "FAST XP Rails (OD Green)"
+     Description "Removable rails for the Ops-Core FAST XP / XP Carbon helmets."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{BAC013EB5A427CC6}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{E058FC8C24C55E7A}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{125FA656A746FB75}" {
+   Object "{CBC44782D105819C}ASSETS/XP/XP ODGreen/XPRails_Item.xob"
+  }
+  RigidBody "{9C6110EB20E3E5B7}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{0B690D39B73B2908}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{E69C9D0D958749DE}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{ADFF4A4608D5C270}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{D128D4ED90ED09A9}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{F770895D35334B52}" {
+   AreaType OUTLAW_Helmet_XPRails "{62AA90669883BF0E}" {
+   }
+   WornModel "{A2EF55E3B090AB27}ASSETS/XP/XP ODGreen/XPRails.xob"
+   ItemModel "{CBC44782D105819C}ASSETS/XP/XP ODGreen/XPRails_Item.xob"
+  }
+  ActionsManagerComponent "{A7B3C6FB91F08F7F}" {
+   ActionContexts {
+    UserActionContext "{B80AD9E0E00F07C9}" {
+     UIInfo SCR_ActionContextUIInfo "{A622C329A7C39AB4}" {
+     }
+     ContextName "default"
+     Position PointInfo "{B202BFDAEBC95B1D}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{411510B5A1D4999A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{B50663A3997BCFEF}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{B3E9F641F57B6457}" {
+  }
+  RplComponent "{FB9C9E16E27A1974}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{7BB1AFA6BD642C57}" {
+  }
+ }
+}

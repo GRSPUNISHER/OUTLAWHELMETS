@@ -10,8 +10,8 @@ GameEntity {
   ClothNodeStorageComponent "{6A2F5CA924199E9D}" {
    Attributes SCR_ItemAttributeCollection "{6A2F5CA9DDAB18D2}" {
     ItemDisplayName UIInfo "{6A2F5CA9D6676EE3}" {
-     Name "SF V2 Bump (AOR1)"
-     Description "Modular SF V2 Bump helmet. Removable rails, ear pro, rear battery, scrim, NVG, light and strobe slots."
+     Name "SF V2 Helmet"
+     Description "Modular SF V2 helmet. Interchangeable shell, removable rails, ear pro, BRS, battery, counterweight, scrim, NVG, light and strobe slots."
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA9C13735FD}" {
      SizeSetupStrategy Manual
@@ -33,11 +33,11 @@ GameEntity {
    Enabled 0
    Attributes SCR_ItemAttributeCollection "{6A2F5CA91793164B}" {
     ItemDisplayName UIInfo "{6A2F5CA917931623}" {
-     Name "SF V2 Bump (AOR1)"
+     Name "SF V2 Helmet"
      Description ""
     }
     ItemPhysAttributes ItemPhysicalAttributes "{6A2F5CA917931612}" {
-     Weight 1.5
+     Weight 0.5
      SizeSetupStrategy Manual
      ItemDimensions 20 20 20
      ItemVolume 2500
@@ -56,32 +56,18 @@ GameEntity {
    }
   }
   MeshObject "{6A2F5CA91793117D}" {
-   Object "{8B6B3B8A141AA4E9}ASSETS/HELMET AOR1/SF V2 Bump_Item.xob"
+   Object "{C0C0A75F21477427}ASSETS/HELMET BLACK/SF V2 Core_Item.xob"
    LODFactors {
     1 1 1 1
    }
    InheritVisibility 1
   }
   RigidBody "{6A2F5CA91793115B}" {
-   Mass 1.5
+   Mass 0.5
    LinearDamping 0.2
    AngularDamping 0.4
    SimState None
    ModelGeometry 1
-  }
-  SCR_ArmorDamageManagerComponent "{6A2F5CA9179316DA}" {
-   "Additional hit zones" {
-    SCR_ArmorHitZone helmet {
-     ColliderNames {
-      "UTM_Helmet"
-     }
-     HZDefault 1
-     MaxHealth 10000
-     m_eHitZoneGroup HEAD
-    }
-   }
-   m_fPassedDamageScale 4
-   m_bIsDetachable 1
   }
   SCR_ItemOutfitFactionComponent "{6A2F5CA91793179E}" {
    m_OutfitDataHolder SCR_OutfitFactionDataHolder "{6A2F5CA91793179F}" {
@@ -114,50 +100,66 @@ GameEntity {
    AreaType LoadoutHeadCoverArea "{6A2F5CA9179317CF}" {
    }
    Slots {
-    LoadoutSlotInfo Rails {
-     Prefab "{E676000201B24A76}Prefabs/Helmets/SF V2 Helmets/Rails/SF_Rails_AOR1.et"
+    LoadoutSlotInfo Shell {
+     Prefab "{F9865B004EE0499F}Prefabs/Helmets/SF V2 Helmets/Shells/SF_BallisticShell_MCB.et"
      InheritParentSkeleton 1
-     AreaType GRS_Helmet_Rails "{4D514F3A8DD68303}" {
+     AreaType OUTLAW_Helmet_SFShell "{6BC35C01C287A387}" {
+     }
+    }
+    LoadoutSlotInfo Rails {
+     Prefab "{6BE78E3C52A12E0B}Prefabs/Helmets/SF V2 Helmets/Rails/SF_Rails_MCB.et"
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_Rails "{4D514F3A8DD68303}" {
      }
     }
     LoadoutSlotInfo Battery {
      InheritParentSkeleton 1
-     AreaType GRS_Helmet_Battery "{6A2F5CA917931711}" {
+     AreaType OUTLAW_Helmet_Battery "{6A2F5CA917931711}" {
+     }
+    }
+    LoadoutSlotInfo BRS {
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_BRS "{7EE0894883C95DE1}" {
+     }
+    }
+    LoadoutSlotInfo Counterweight {
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_Counterweight "{553F322AABCF4AC6}" {
      }
     }
     LoadoutSlotInfo Earpro {
      InheritParentSkeleton 1
-     AreaType GRS_Helmet_EarPro "{6A2F5CA91793171C}" {
+     AreaType OUTLAW_Helmet_EarPro "{6A2F5CA91793171C}" {
      }
     }
     LoadoutSlotInfo HelStroke {
      PivotID "Head"
      Offset 0.0003 0.1973 0.0552
      Angles 23.0768 -0.5668 1.9476
-     AreaType GRS_Helmet_Strobe "{6A2F5CA917931770}" {
+     AreaType OUTLAW_Helmet_Strobe "{6A2F5CA917931770}" {
      }
     }
     LoadoutSlotInfo Light {
      PivotID "Head"
-     Offset 0.0962 0.1411 -0.0392
-     Angles 6.0624 -5.2432 2.4633
-     AreaType GRS_Helmet_Light "{6A2F5CA917931778}" {
+     Offset -0.0973 0.0642 0.0308
+     Angles 6.136 -180 -2.4792
+     AreaType OUTLAW_Helmet_Light "{6A2F5CA917931778}" {
      }
     }
     LoadoutSlotInfo NVG {
      PivotID "Head"
      Offset 0.0016 0.0337 -0.1209
      Angles 0 -179.996 0
-     AreaType GRS_Helmet_NVG "{6A2F5CA917931769}" {
+     AreaType OUTLAW_Helmet_NVG "{6A2F5CA917931769}" {
      }
     }
     LoadoutSlotInfo Scrims {
-     AreaType GRS_Helmet_Scrim "{6A2F76A19026ED51}" {
+     AreaType OUTLAW_Helmet_Scrim "{6A2F76A19026ED51}" {
      }
     }
    }
-   WornModel "{561D60AFD6B6D248}ASSETS/HELMET AOR1/SF V2 Bump.xob"
-   ItemModel "{8B6B3B8A141AA4E9}ASSETS/HELMET AOR1/SF V2 Bump_Item.xob"
+   WornModel "{E1ED76455DE4E41B}ASSETS/HELMET BLACK/SF V2 Core.xob"
+   ItemModel "{C0C0A75F21477427}ASSETS/HELMET BLACK/SF V2 Core_Item.xob"
    PhysicsOnWearEnabled 1
    AnimateCollidersOnWear 1
    SoundInt 110

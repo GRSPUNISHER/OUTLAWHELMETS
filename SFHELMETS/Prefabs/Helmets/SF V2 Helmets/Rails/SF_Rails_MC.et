@@ -2,10 +2,11 @@ GenericEntity {
  ID "B15FE3DCE2DD4A05"
  components {
   ParametricMaterialInstanceComponent "{7051811265EA8F35}" {
+   UserParamAlpha 0
   }
   Persistence "{01B284C974AA71E2}" {
   }
-  GRS_FirstPersonHideComponent "{9AC383B750F821EA}" {
+  OUTLAW_FirstPersonHideComponent "{9AC383B750F821EA}" {
   }
   InventoryItemComponent "{AD04CC264D59B202}" {
    Attributes SCR_ItemAttributeCollection "{6227CE1A501BD2A1}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{EB4974550FF7A345}" {
-   AreaType GRS_Helmet_Rails "{D115A05987673E19}" {
+   AreaType OUTLAW_Helmet_Rails "{D115A05987673E19}" {
    }
    WornModel "{C2FA591D21B9B342}ASSETS/HELMET MC/SF V2 Rails.xob"
    ItemModel "{E3CD26917D5BCCBB}ASSETS/HELMET MC/SF V2 Rails_Item.xob"

@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{F11B1653BE219315}ASSETS/XP/XP RG/Data/RGXP_XP4M_BCR.edds"
+ NMOMap "{B88BD7A056E542F6}ASSETS/XP/XP RG/Data/RGXP_XP4M_NMO.edds"
+}

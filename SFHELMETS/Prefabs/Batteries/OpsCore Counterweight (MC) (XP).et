@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "81D35F9765E67DF5"
+ components {
+  ParametricMaterialInstanceComponent "{44127B7AC169173A}" {
+   UserParamAlpha 0
+  }
+  Persistence "{8FD0FA796679330D}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{3A01ECB23E85868B}" {
+  }
+  InventoryItemComponent "{E2FF4F35BA36FFA8}" {
+   Attributes SCR_ItemAttributeCollection "{EF241AEF77A3BA3A}" {
+    ItemDisplayName UIInfo "{6A0194E603DCDFB3}" {
+     Name "Ops-Core Counterweight (MC) (XP)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6A43DC44B6CB0029}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{CD17AB7644D155C3}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{3F6D6E1A28C12B59}" {
+   Object "{36DD928534CA0E90}ASSETS/Helmet Accessories/COUNTERWEIGHT/MC COUNTERWEIGHT/XP/counterweight_XP_Item.xob"
+  }
+  RigidBody "{53887BFB9041DD7A}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{5F100D080FAC384B}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{BFEF2038E0482DB5}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{A8DCA270125C7BA6}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{C87C21B5DF6995C7}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{28A0CDF5D4EF24E7}" {
+   AreaType OUTLAW_Helmet_XPCounterweight "{31F2CF40F49D01D1}" {
+   }
+   WornModel "{458E14E4F901F605}ASSETS/Helmet Accessories/COUNTERWEIGHT/MC COUNTERWEIGHT/XP/counterweight_XP.xob"
+   ItemModel "{36DD928534CA0E90}ASSETS/Helmet Accessories/COUNTERWEIGHT/MC COUNTERWEIGHT/XP/counterweight_XP_Item.xob"
+  }
+  ActionsManagerComponent "{971C9E603C09B53E}" {
+   ActionContexts {
+    UserActionContext "{55ADAEB345BC91A0}" {
+     UIInfo SCR_ActionContextUIInfo "{FD76C764C9F7B87A}" {
+     }
+     ContextName "default"
+     Position PointInfo "{A80B2B8751F1CCCD}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{DE06256F493CC96F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{DF2F58CB5570F85B}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{0EE1408C80C4815C}" {
+  }
+  RplComponent "{D7A9AEF1ABDA8E8F}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{3D5F3D31E46937B0}" {
+  }
+ }
+}

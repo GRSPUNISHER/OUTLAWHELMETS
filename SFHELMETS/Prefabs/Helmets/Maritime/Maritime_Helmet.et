@@ -1,0 +1,208 @@
+GameEntity {
+ ID "BB9DF4ADA5F3145D"
+ components {
+  ParametricMaterialInstanceComponent "{D53A18360422AA2F}" {
+   UserParamAlpha 0
+   ApplyPropertiesWhenMeshChanged 1
+  }
+  Persistence "{A337373A68C7149B}" {
+  }
+  ClothNodeStorageComponent "{6E47288D7F45166B}" {
+   Attributes SCR_ItemAttributeCollection "{D8C952A411EB23DA}" {
+    ItemDisplayName UIInfo "{B572E7EB04CEFC87}" {
+     Name "Ops-Core Maritime Helmet"
+     Description "Modular Ops-Core Maritime helmet. Interchangeable shell, removable rails, ear pro, BRS, battery, counterweight, scrim, NVG, light and strobe slots."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{D3EAEE45E9AE9DBA}" {
+     SizeSetupStrategy Manual
+     ItemDimensions 25 25 25
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{BC9A48F0F8557021}" {
+      CameraOrbitAngles -25 30 0
+      FOV 65
+      ShowAllChildrens 1
+     }
+    }
+   }
+   StoragePurpose 0x40 0
+  }
+  ColliderHistoryComponent "{AECFEEE91B658F4E}" {
+  }
+  InventoryItemComponent "{CED0899E4C6837E9}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{5686D4FC2CCA2F1E}" {
+    ItemDisplayName UIInfo "{CF79AC97065603E6}" {
+     Name "Ops-Core Maritime Helmet"
+     Description ""
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{CDD7F9FD9AF85CB4}" {
+     Weight 0.5
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 20
+     ItemVolume 2500
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{22E62AD0EF41A6DF}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 1.5
+      CameraOffset 0 -0.02 0
+      FOV 10
+      PreviewWornModel 0
+     }
+     SCR_HeadgearPhysicsObserverAttribute "{64753AC010454117}" {
+     }
+    }
+   }
+  }
+  MeshObject "{D18B331BD357261A}" {
+   Object "{C0C0A75F21477427}ASSETS/HELMET BLACK/SF V2 Core_Item.xob"
+   LODFactors {
+    1 1 1 1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{57D00B4E3B82EF4B}" {
+   Mass 0.5
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_ItemOutfitFactionComponent "{5510D65A4EFD7FC8}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{9FF89BE8660AAA44}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{82609A9E860FB153}" {
+      m_AffiliatedFactionKey "US"
+      m_iOutfitFactionValue 15
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{6DB06F4A12203F0B}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{3BD81C92160E86C9}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{D734711BC528E4AB}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{D02A97DC04C4B527}" {
+     m_sSoundProject "{0737072109E39224}Sounds/Items/_SharedData/Drop/Items_Drop_Helmet.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{0CBBC90B9F8BA941}" {
+   AreaType LoadoutHeadCoverArea "{E4ABFAC763408A46}" {
+   }
+   Slots {
+    LoadoutSlotInfo Shell {
+     Prefab "{127B35B37B9F9EF3}Prefabs/Helmets/Maritime/Shells/Maritime_Shell_MCB.et"
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_MaritimeShell "{F77BD66593A62EB0}" {
+     }
+    }
+    LoadoutSlotInfo Rails {
+     Prefab "{8786C3D4377138A6}Prefabs/Helmets/Maritime/Rails/Maritime_Rails_MCB.et"
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_MaritimeRails "{C17ED06C134084A3}" {
+     }
+    }
+    LoadoutSlotInfo Battery {
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_MaritimeBattery "{DE251D0FF727F487}" {
+     }
+    }
+    LoadoutSlotInfo BRS {
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_MaritimeBRS "{55A45ABCD4138545}" {
+     }
+    }
+    LoadoutSlotInfo Counterweight {
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_Counterweight "{0E2069851DF54148}" {
+     }
+    }
+    LoadoutSlotInfo Earpro {
+     InheritParentSkeleton 1
+     AreaType OUTLAW_Helmet_MaritimeEarPro "{2A2F420632D190FA}" {
+     }
+    }
+    LoadoutSlotInfo HelStroke {
+     PivotID "Head"
+     Offset 0 0.094 -0.1017
+     Angles 3.95 180 0
+     AreaType OUTLAW_Helmet_Strobe "{8EDE82B80B39FDF3}" {
+     }
+    }
+    LoadoutSlotInfo Light {
+     PivotID "Head"
+     Offset -0.0975 0.0631 0.034
+     Angles 5.3344 180 -3.8093
+     AreaType OUTLAW_Helmet_Light "{5314203B7E356F73}" {
+     }
+    }
+    LoadoutSlotInfo NVG {
+     PivotID "Head"
+     Offset 0.0016 0.0337 -0.1209
+     Angles 0 -179.996 0
+     AreaType OUTLAW_Helmet_NVG "{D2BD3B6A9ABC651B}" {
+     }
+    }
+    LoadoutSlotInfo Scrims {
+     AreaType OUTLAW_Helmet_Scrim "{CF66D9765E89D33F}" {
+     }
+    }
+   }
+   WornModel "{E1ED76455DE4E41B}ASSETS/HELMET BLACK/SF V2 Core.xob"
+   ItemModel "{C0C0A75F21477427}ASSETS/HELMET BLACK/SF V2 Core_Item.xob"
+   PhysicsOnWearEnabled 1
+   AnimateCollidersOnWear 1
+   SoundInt 110
+  }
+  ActionsManagerComponent "{6B998E1DB94E1EC9}" {
+   ActionContexts {
+    UserActionContext "{40BADD381D1E190A}" {
+     ContextName "default"
+     Position PointInfo "{B64B7461FD9C8DD7}" {
+      Offset 0 0.1 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_EquipClothAction "{B10481BFEFE597F5}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{AC4954613138E957}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+     "Sort Priority" -10
+    }
+    SCR_PickUpItemAction "{4BB1C608EDDC87B7}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{4C5039A1A11AEFAF}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{FEE959AEC1128EF2}" {
+  }
+  RplComponent "{0F1817DDC02B5E75}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{E16D3E5A8E29D62D}" {
+  }
+ }
+ coords 0 0 0
+}

@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "BF3DC50A58E2D99F"
+ components {
+  ParametricMaterialInstanceComponent "{8B223746E3064DD2}" {
+   UserParamAlpha 0
+  }
+  Persistence "{9A573F8F7C1B99D2}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{8D35724443CF4B9E}" {
+  }
+  InventoryItemComponent "{3DA2326CDBC7A8C5}" {
+   Attributes SCR_ItemAttributeCollection "{9480877C81E9A794}" {
+    ItemDisplayName UIInfo "{5B1558DAE9753AA0}" {
+     Name "Maritime Rails (OD Green)"
+     Description "Removable rails for the Ops-Core Maritime helmet."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6FDA947E91F476AE}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{093BE689ADFD9D7D}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{08C22A7940096F86}" {
+   Object "{0672D8713A00E57E}ASSETS/MARITIME/MARITIME ODGreen/MaritimeRails_Item.xob"
+  }
+  RigidBody "{CA7E411DFABA574E}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{667BDAFED7CF52BD}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{AD30006F7F6075F9}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{C87066BC727890BC}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{8E4E8F8E6E64CC17}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{E392C2BEF896D92F}" {
+   AreaType OUTLAW_Helmet_MaritimeRails "{178991D9834376CB}" {
+   }
+   WornModel "{82F3B82BC4356A9E}ASSETS/MARITIME/MARITIME ODGreen/MaritimeRails.xob"
+   ItemModel "{0672D8713A00E57E}ASSETS/MARITIME/MARITIME ODGreen/MaritimeRails_Item.xob"
+  }
+  ActionsManagerComponent "{60FF98EC4307443D}" {
+   ActionContexts {
+    UserActionContext "{7DCF33975E0F9622}" {
+     UIInfo SCR_ActionContextUIInfo "{684BF9364C624655}" {
+     }
+     ContextName "default"
+     Position PointInfo "{EE157BBD846FA343}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{67D03EE7E0E3145D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{D23492D4219AB474}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{EF613DE99EE7D69B}" {
+  }
+  RplComponent "{C0B419871623582C}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{0FC6C3BA693F450C}" {
+  }
+ }
+}

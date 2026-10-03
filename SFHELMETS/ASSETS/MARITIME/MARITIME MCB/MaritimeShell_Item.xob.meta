@@ -1,0 +1,58 @@
+MetaFileClass {
+ Name "{C891B540682C8E8F}ASSETS/MARITIME/MARITIME MCB/MaritimeShell_Item.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{20A9DEE24D3D3AF0}" {
+     SourceMaterial "MT"
+     AssignedMaterial "{0BD949DBCFDAE499}ASSETS/MARITIME/MARITIME MCB/Data/MaritimeMT.emat"
+    }
+    MaterialAssignClass "{E0508B78299B3CA2}" {
+     SourceMaterial "KitA"
+     AssignedMaterial "{0F27834E73F10164}ASSETS/MARITIME/MARITIME MCB/Data/MaritimeKitA.emat"
+    }
+   }
+   MeshParams {
+    MeshParam MT_ShellOnly {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Item {
+     LayerPreset "ItemFireView"
+     SurfaceProperties {
+      "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{282EEBD6E4F6186E}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{A7E38BA052E52362}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{509B14C7F96FC168}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{58DDD14D30A77BFF}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{C94D4947B9FDF30B}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{C7A6D7A098508781}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass Xbox : PC {
+  }
+ }
+}

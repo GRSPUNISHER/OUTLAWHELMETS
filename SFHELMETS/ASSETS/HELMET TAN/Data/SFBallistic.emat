@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{261DCDAAB73BF94E}ASSETS/HELMET TAN/Data/tanSFBallistic_BCR.edds"
+ NMOMap "{9337DAC60860EF1B}ASSETS/HELMET TAN/Data/tanSFBallistic_NMO.edds"
+}

@@ -2,10 +2,11 @@ GenericEntity {
  ID "6A2F7249CF6975E7"
  components {
   ParametricMaterialInstanceComponent "{6A2F7249CF6975E9}" {
+   UserParamAlpha 0
   }
   Persistence "{6A2F7249CF6975C9}" {
   }
-  GRS_FirstPersonHideComponent "{6A2F7249CF6975D2}" {
+  OUTLAW_FirstPersonHideComponent "{6A2F7249CF6975D2}" {
   }
   InventoryItemComponent "{6A2F7249CF6975D3}" {
    Attributes SCR_ItemAttributeCollection "{16F5F69B2400EA72}" {
@@ -54,7 +55,7 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{6A2F7249CF697587}" {
-   AreaType GRS_Helmet_Battery "{1F5B423C74B5C397}" {
+   AreaType OUTLAW_Helmet_Battery "{1F5B423C74B5C397}" {
    }
    WornModel "{84C12F9BFAC72F5C}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/shawbrainpouch.xob"
    ItemModel "{84C12F9BFAC72F5C}ASSETS/Helmet Accessories/ShawBrainPouch/RG SHAWBRAIN/shawbrainpouch.xob"

@@ -135,6 +135,25 @@ def utm_of(shell, matname):
     return u
 
 
+BOX_ITEM = {"NVG_Counterweight_OpsCore_Kit", "BNVDFBat"}   # 64-point hulls of these small parts had degenerate faces
+
+
+def box(objs, name):
+    pts = np.vstack([np.array([tuple(o.matrix_world @ v.co) for v in o.data.vertices]) for o in objs])
+    lo, hi = pts.min(0), pts.max(0)
+    bm = bmesh.new()
+    for x in (lo[0], hi[0]):
+        for y in (lo[1], hi[1]):
+            for z in (lo[2], hi[2]):
+                bm.verts.new((x, y, z))
+    bmesh.ops.convex_hull(bm, input=bm.verts)
+    me = bpy.data.meshes.new(name); bm.to_mesh(me); bm.free()
+    o = bpy.data.objects.new(name, me)
+    bpy.context.scene.collection.objects.link(o)
+    me.materials.append(bpy.data.materials.get(UCX_MAT) or bpy.data.materials.new(UCX_MAT))
+    return o
+
+
 def hull(objs, name, max_points=64):
     pts = np.vstack([np.array([tuple(o.matrix_world @ v.co) for v in o.data.vertices]) for o in objs])
     bm0 = bmesh.new()
@@ -177,7 +196,10 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     arm = import_template()
     info = {}
+    only = set(filter(None, os.environ.get("ONLY", "").split(",")))
     for part, (srcs, matmap, utm) in PARTS.items():
+        if only and part not in only:
+            continue
         print("PART", part)
         m = make_copy(srcs, part, matmap)
         ws = np.array([tuple(v.co) for v in m.data.vertices])
@@ -193,14 +215,15 @@ def main():
             bpy.data.objects.remove(o, do_unlink=True)
         item = make_copy(srcs, part, matmap)
         item.data.transform(Matrix.Translation(Vector(ITEM_SHIFT)))
-        ucx = hull([item], "UCX_Item")
+        ucx = box([item], "UCX_Item") if part in BOX_ITEM else hull([item], "UCX_Item")
         export(os.path.join(OUT, part + "_Item.fbx"), [item, ucx], item, {'MESH'})
         info[part] = {"mats": [mt.name for mt in item.data.materials], "verts": len(ws),
                       "bbmin": ws.min(0).round(4).tolist(), "bbmax": ws.max(0).round(4).tolist(), "utm": utm}
         bpy.data.objects.remove(item, do_unlink=True)
         bpy.data.objects.remove(ucx, do_unlink=True)
         print("  mats", info[part]["mats"], "bb", info[part]["bbmin"], info[part]["bbmax"])
-    json.dump(info, open(os.path.join(TOOLS, "work", "parts.json"), "w"), indent=1)
+    if not only:
+        json.dump(info, open(os.path.join(TOOLS, "work", "parts.json"), "w"), indent=1)
 
 
 main()

@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "BF2CA5CBAF98DFF8"
+ components {
+  ParametricMaterialInstanceComponent "{53E0414DFB60BF4D}" {
+   UserParamAlpha 0
+  }
+  Persistence "{84DA9F4895C363E7}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{18226B4FD1DF5D00}" {
+  }
+  InventoryItemComponent "{7296BF21DEA9ACDF}" {
+   Attributes SCR_ItemAttributeCollection "{B17D5E4A32F500DC}" {
+    ItemDisplayName UIInfo "{D81876D6E43B0146}" {
+     Name "Comtac VII (Tan) (XP)"
+     Description "Ear Pro"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{9CD2A2A4DA3AE7B0}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{8390878A09F8D9A3}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{E969FD0C2E8FAD53}" {
+   Object "{92798B3A230F0601}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/XP/comtacviinostrap_XP_Item.xob"
+  }
+  RigidBody "{ABAC2651A6D89D4E}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{85B93D02C45B37B6}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{4E7711823810283D}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{FDBB1F9EFAB120BB}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{7242083E9ED4295A}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{9E93AF9C2BC7ED06}" {
+   AreaType OUTLAW_Helmet_XPEarPro "{4CEECC165996BF73}" {
+   }
+   WornModel "{181DDEB4631DFE89}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/XP/comtacviinostrap_XP.xob"
+   ItemModel "{92798B3A230F0601}ASSETS/Helmet Accessories/COMTACS/TAN COMTACS/XP/comtacviinostrap_XP_Item.xob"
+  }
+  ActionsManagerComponent "{0D891832E4F7457F}" {
+   ActionContexts {
+    UserActionContext "{324524D97B8408AA}" {
+     UIInfo SCR_ActionContextUIInfo "{9CF6F63F0D8562ED}" {
+     }
+     ContextName "default"
+     Position PointInfo "{683856CCEAA1313E}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{791EC0D07B0B080A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{E7DA2C40A35FE839}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{F5D3BE40772CA197}" {
+  }
+  RplComponent "{361562204F7F89BF}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{2412DAD691F9F802}" {
+  }
+ }
+}

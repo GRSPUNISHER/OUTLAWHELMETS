@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BCEF93C654605DB5}ASSETS/MARITIME/MARITIME Tan/Data/MaritimeMT.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

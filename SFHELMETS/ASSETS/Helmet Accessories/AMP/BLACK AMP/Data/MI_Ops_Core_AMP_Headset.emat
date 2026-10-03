@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{D4B6E5FC6F98ACBA}ASSETS/Helmet Accessories/AMP/BLACK AMP/Data/OpsCore_AMP_Black_BCR.edds"
+ NMOMap "{687BEEA8C328667A}ASSETS/Helmet Accessories/AMP/BLACK AMP/Data/OpsCore_AMP_Black_NMO.edds"
+}

@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "07D8237888FF950F"
+ components {
+  ParametricMaterialInstanceComponent "{4825DC2477454CE3}" {
+   UserParamAlpha 0
+  }
+  Persistence "{9445EFD273A325C7}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{47C3ACC054165536}" {
+  }
+  InventoryItemComponent "{11CA817CA1C24F67}" {
+   Attributes SCR_ItemAttributeCollection "{2EDA1A6BDB7C3773}" {
+    ItemDisplayName UIInfo "{5F9A452C71924CD1}" {
+     Name "Ops-Core AMP (RG) (Maritime)"
+     Description "Ear Pro"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{CB9522DC8E6D4F30}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{4C281C6DA6CA9DF5}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{AF73B1CB9A3E15D9}" {
+   Object "{55E882DB3626FDF5}ASSETS/Helmet Accessories/AMP/RG AMP/Maritime/OpsCore_AMP_Maritime_Item.xob"
+  }
+  RigidBody "{09243E9FA76D4DCB}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{8FE1603AB8E1E3CA}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{2CB17E71D5C71358}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{F2952F8BF279CC60}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{85DD36C4490E826F}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{7C4DD4E2A5DE088D}" {
+   AreaType OUTLAW_Helmet_MaritimeEarPro "{DF3E9EB6E8EE1B9F}" {
+   }
+   WornModel "{9E1BD95EE7906325}ASSETS/Helmet Accessories/AMP/RG AMP/Maritime/OpsCore_AMP_Maritime.xob"
+   ItemModel "{55E882DB3626FDF5}ASSETS/Helmet Accessories/AMP/RG AMP/Maritime/OpsCore_AMP_Maritime_Item.xob"
+  }
+  ActionsManagerComponent "{B8F528A6BCA8240D}" {
+   ActionContexts {
+    UserActionContext "{5A7219408CC80FE7}" {
+     UIInfo SCR_ActionContextUIInfo "{0DA4A4095FA83F3E}" {
+     }
+     ContextName "default"
+     Position PointInfo "{9F70B4E52915618A}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{BCFCEF922DEB3030}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{CF082DB38EB02E65}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{4F681D97A598BF0B}" {
+  }
+  RplComponent "{F1EFA6E5ED0A069B}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{BE244C0690A550A0}" {
+  }
+ }
+}

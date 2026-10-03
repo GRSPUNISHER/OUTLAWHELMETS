@@ -1,0 +1,95 @@
+GenericEntity {
+ ID "3FC0C44D95DFA132"
+ components {
+  ParametricMaterialInstanceComponent "{CD935C34DCE97B97}" {
+   UserParamAlpha 0
+  }
+  Persistence "{A5F34DAEEBF60B69}" {
+  }
+  OUTLAW_FirstPersonHideComponent "{FAB7D8417BE95A8C}" {
+  }
+  InventoryItemComponent "{12803733B1AC8DA7}" {
+   Attributes SCR_ItemAttributeCollection "{4790210889FCF190}" {
+    ItemDisplayName UIInfo "{A7F2F31D0FA4409F}" {
+     Name "HighCut SemiCircle Scrim (RG) (XP)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{EB08BE565B86ACFD}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{45384513F37B2E51}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+  }
+  MeshObject "{339DD1AF3E770BC2}" {
+   Object "{D2DD3D76858341F8}ASSETS/Helmet Accessories/Scrims/HighCut Semi RG/XP/HighCut Scrim Semi_XP_Item.xob"
+  }
+  RigidBody "{77E4DEBF381CB84F}" {
+   Mass 0.3
+   LinearDamping 0.2
+   AngularDamping 0.4
+   SimState None
+   ModelGeometry 1
+  }
+  SCR_SoundDataComponent "{6878E066BE8B0DC3}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{DDF15C453054EBDC}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{5721F377BD99D84A}" {
+     m_sSoundProject "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+     m_eFlags 0
+    }
+    SCR_AudioSourceConfiguration "{DADC88AF277CA7A9}" {
+     m_sSoundProject "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{64CF7F9F4C52756F}" {
+   AreaType OUTLAW_Helmet_XPScrim "{CB1ACF64DB4DFDF4}" {
+   }
+   WornModel "{B4171E67A3ED0868}ASSETS/Helmet Accessories/Scrims/HighCut Semi RG/XP/HighCut Scrim Semi_XP.xob"
+   ItemModel "{D2DD3D76858341F8}ASSETS/Helmet Accessories/Scrims/HighCut Semi RG/XP/HighCut Scrim Semi_XP_Item.xob"
+  }
+  ActionsManagerComponent "{7071437F736CDA1E}" {
+   ActionContexts {
+    UserActionContext "{F53B384D2181BF35}" {
+     UIInfo SCR_ActionContextUIInfo "{FF37761E21B0965A}" {
+     }
+     ContextName "default"
+     Position PointInfo "{DBFA0375568E1ABF}" {
+     }
+     Radius 0.3
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{A6C96851653C6E04}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{1CAF1645CAB3DD4D}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+   }
+  }
+  NwkPhysicsMovementComponent "{499050D32C0D129A}" {
+  }
+  RplComponent "{01D0E6A20B95FBBD}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{823FFC4733DEE785}" {
+  }
+ }
+}

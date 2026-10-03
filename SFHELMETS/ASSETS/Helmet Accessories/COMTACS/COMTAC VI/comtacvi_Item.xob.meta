@@ -8,6 +8,10 @@ MetaFileClass {
      AssignedMaterial "{F352D9B5C8828105}ASSETS/Helmet Accessories/COMTACS/COMTAC VI/Data/MI_Comtac_6.emat"
     }
    }
+   MeshParams {
+    MeshParam "SM_Comtac_6_ARC.001" {
+    }
+   }
    GeometryParams {
     GeometryParam UCX_Item {
      LayerPreset "ItemFireView"
@@ -20,6 +24,9 @@ MetaFileClass {
    }
    Common TXOCommonClass "{CB2FF77D8B8976C5}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.10 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{6DBA077C4E5887EB}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -40,6 +47,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{3A3B1B59A04AD92C}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }
