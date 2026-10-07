@@ -81,6 +81,8 @@ GenericEntity {
       m_sIconName "pick-up"
      }
     }
+    SCR_EquipClothAction "{3189A23442D6F03D}" : "{83B98F1A96591AC6}Prefabs/Characters/Core/Actions/EquipClothAction.conf" {
+    }
    }
   }
   NwkPhysicsMovementComponent "{8A8585B8FEB226EE}" {
